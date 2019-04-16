@@ -1,0 +1,399 @@
+\hypertarget{class_parking_space}{}\section{Parking\+Space Class Reference}
+\label{class_parking_space}\index{Parking\+Space@{Parking\+Space}}
+
+
+{\ttfamily \#include $<$Parking\+Space.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_parking_space_af466c9e05b01e570ea19ef671846a40a}{Parking\+Space}} (int \mbox{\hyperlink{class_parking_space_a73726147c4a69b71b004642fa7be3cf5}{spot\+ID}}, std\+::string \mbox{\hyperlink{class_parking_space_abe337abebed765d6255afc5d6d6a907e}{type}}=\char`\"{}normal\char`\"{})
+\item 
+int \mbox{\hyperlink{class_parking_space_a8f250e7f0d01332b36c117b7c9ee0982}{get\+Spot\+ID}} () const
+\begin{DoxyCompactList}\small\item\em return spot id as an integer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_space_a9acf2d76a9b9f84d049b44dd0d4a5c8b}{set\+Spot\+ID}} (int)
+\begin{DoxyCompactList}\small\item\em set spot id \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_parking_space_afc40502f401e7689685be6248c2ce097}{get\+Occupied}} () const
+\begin{DoxyCompactList}\small\item\em get occupation status \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_space_ab535bca076add6abc31048ea8aff5719}{set\+Occupied}} (bool)
+\begin{DoxyCompactList}\small\item\em set space occupancy \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_parking_space_a93d7ebecb8409d606f74504449518e99}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em return space type as a string \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_space_a4abd727d17e2045ef0617fb68e8135ed}{set\+Type}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em set parking space type \end{DoxyCompactList}\item 
+tm \mbox{\hyperlink{class_parking_space_a83b660966c8ed21827b961d4e084c183}{get\+Reserved\+Start}} () const
+\begin{DoxyCompactList}\small\item\em get the start time of the reservation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_space_a6a764047ce175633cc5288cede8eba90}{set\+Reserved\+Start}} (tm)
+\begin{DoxyCompactList}\small\item\em set reserved start time using a tm struct \end{DoxyCompactList}\item 
+tm \mbox{\hyperlink{class_parking_space_a9048ab587b0287dabfa0f8cc202e8bb5}{get\+Reserved\+End}} () const
+\begin{DoxyCompactList}\small\item\em return reserved end time as a tm struct \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_space_aac425aba68f7d46d178fb5c33ea0367a}{set\+Reserved\+End}} (tm)
+\begin{DoxyCompactList}\small\item\em set reserved end time using a struct \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_space_a22e2c189a28f4b56cb73ba807811e6ad}{reserve}} (tm)
+\begin{DoxyCompactList}\small\item\em reseve parking space using tm struct \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_parking_space_a4d9ade29bc807ca0e60ee8b1d4f24745}{Parking\+Space}} (int, std\+::string)
+\item 
+int \mbox{\hyperlink{class_parking_space_a8f250e7f0d01332b36c117b7c9ee0982}{get\+Spot\+ID}} () const
+\item 
+void \mbox{\hyperlink{class_parking_space_a9acf2d76a9b9f84d049b44dd0d4a5c8b}{set\+Spot\+ID}} (int)
+\item 
+bool \mbox{\hyperlink{class_parking_space_afc40502f401e7689685be6248c2ce097}{get\+Occupied}} () const
+\item 
+void \mbox{\hyperlink{class_parking_space_ab535bca076add6abc31048ea8aff5719}{set\+Occupied}} (bool)
+\item 
+std\+::string \mbox{\hyperlink{class_parking_space_a93d7ebecb8409d606f74504449518e99}{get\+Type}} () const
+\item 
+void \mbox{\hyperlink{class_parking_space_a4abd727d17e2045ef0617fb68e8135ed}{set\+Type}} (std\+::string)
+\item 
+tm \mbox{\hyperlink{class_parking_space_a83b660966c8ed21827b961d4e084c183}{get\+Reserved\+Start}} () const
+\item 
+void \mbox{\hyperlink{class_parking_space_a6a764047ce175633cc5288cede8eba90}{set\+Reserved\+Start}} (tm)
+\item 
+tm \mbox{\hyperlink{class_parking_space_a9048ab587b0287dabfa0f8cc202e8bb5}{get\+Reserved\+End}} () const
+\item 
+void \mbox{\hyperlink{class_parking_space_aac425aba68f7d46d178fb5c33ea0367a}{set\+Reserved\+End}} (tm)
+\item 
+void \mbox{\hyperlink{class_parking_space_a22e2c189a28f4b56cb73ba807811e6ad}{reserve}} (tm)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_parking_space_a296bd26740e110c847c9aa423fec4822}{occupied}}
+\item 
+int \mbox{\hyperlink{class_parking_space_a73726147c4a69b71b004642fa7be3cf5}{spot\+ID}}
+\item 
+std\+::string \mbox{\hyperlink{class_parking_space_abe337abebed765d6255afc5d6d6a907e}{type}}
+\item 
+struct tm \mbox{\hyperlink{class_parking_space_ab67b98142322e1285d24aa7dcca3e40e}{reserved\+Start}}
+\item 
+struct tm \mbox{\hyperlink{class_parking_space_a7bb127221ad5cf6ccfd2ef554efee206}{reserved\+End}}
+\item 
+\mbox{\hyperlink{class_sensor}{Sensor}} \mbox{\hyperlink{class_parking_space_ae636a6e282227d45c0d32b45be0e4e78}{sensor}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_parking_space_af466c9e05b01e570ea19ef671846a40a}\label{class_parking_space_af466c9e05b01e570ea19ef671846a40a}} 
+\index{Parking\+Space@{Parking\+Space}!Parking\+Space@{Parking\+Space}}
+\index{Parking\+Space@{Parking\+Space}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{Parking\+Space()}{ParkingSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Parking\+Space\+::\+Parking\+Space (\begin{DoxyParamCaption}\item[{int}]{spot\+ID,  }\item[{std\+::string}]{type = {\ttfamily \char`\"{}normal\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_space_a4d9ade29bc807ca0e60ee8b1d4f24745}\label{class_parking_space_a4d9ade29bc807ca0e60ee8b1d4f24745}} 
+\index{Parking\+Space@{Parking\+Space}!Parking\+Space@{Parking\+Space}}
+\index{Parking\+Space@{Parking\+Space}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{Parking\+Space()}{ParkingSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Parking\+Space\+::\+Parking\+Space (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_parking_space_afc40502f401e7689685be6248c2ce097}\label{class_parking_space_afc40502f401e7689685be6248c2ce097}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Occupied@{get\+Occupied}}
+\index{get\+Occupied@{get\+Occupied}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Occupied()}{getOccupied()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Parking\+Space\+::get\+Occupied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get occupation status 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+occupied -\/ a boolean status off occupancy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_afc40502f401e7689685be6248c2ce097}\label{class_parking_space_afc40502f401e7689685be6248c2ce097}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Occupied@{get\+Occupied}}
+\index{get\+Occupied@{get\+Occupied}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Occupied()}{getOccupied()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Parking\+Space\+::get\+Occupied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_parking_space_a9048ab587b0287dabfa0f8cc202e8bb5}\label{class_parking_space_a9048ab587b0287dabfa0f8cc202e8bb5}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Reserved\+End@{get\+Reserved\+End}}
+\index{get\+Reserved\+End@{get\+Reserved\+End}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Reserved\+End()}{getReservedEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily tm Parking\+Space\+::get\+Reserved\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+return reserved end time as a tm struct 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reserved\+End -\/ the end time of the parking space reservation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_a9048ab587b0287dabfa0f8cc202e8bb5}\label{class_parking_space_a9048ab587b0287dabfa0f8cc202e8bb5}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Reserved\+End@{get\+Reserved\+End}}
+\index{get\+Reserved\+End@{get\+Reserved\+End}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Reserved\+End()}{getReservedEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily tm Parking\+Space\+::get\+Reserved\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_parking_space_a83b660966c8ed21827b961d4e084c183}\label{class_parking_space_a83b660966c8ed21827b961d4e084c183}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Reserved\+Start@{get\+Reserved\+Start}}
+\index{get\+Reserved\+Start@{get\+Reserved\+Start}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Reserved\+Start()}{getReservedStart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily tm Parking\+Space\+::get\+Reserved\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get the start time of the reservation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reserved\+Start -\/ the reservation start time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_a83b660966c8ed21827b961d4e084c183}\label{class_parking_space_a83b660966c8ed21827b961d4e084c183}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Reserved\+Start@{get\+Reserved\+Start}}
+\index{get\+Reserved\+Start@{get\+Reserved\+Start}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Reserved\+Start()}{getReservedStart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily tm Parking\+Space\+::get\+Reserved\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_parking_space_a8f250e7f0d01332b36c117b7c9ee0982}\label{class_parking_space_a8f250e7f0d01332b36c117b7c9ee0982}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Spot\+ID@{get\+Spot\+ID}}
+\index{get\+Spot\+ID@{get\+Spot\+ID}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Spot\+I\+D()}{getSpotID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Parking\+Space\+::get\+Spot\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+return spot id as an integer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ spot\+ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_a8f250e7f0d01332b36c117b7c9ee0982}\label{class_parking_space_a8f250e7f0d01332b36c117b7c9ee0982}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Spot\+ID@{get\+Spot\+ID}}
+\index{get\+Spot\+ID@{get\+Spot\+ID}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Spot\+I\+D()}{getSpotID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Parking\+Space\+::get\+Spot\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_parking_space_a93d7ebecb8409d606f74504449518e99}\label{class_parking_space_a93d7ebecb8409d606f74504449518e99}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Parking\+Space\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+return space type as a string 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type -\/ the string type of the parking space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_a93d7ebecb8409d606f74504449518e99}\label{class_parking_space_a93d7ebecb8409d606f74504449518e99}} 
+\index{Parking\+Space@{Parking\+Space}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Parking\+Space\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_parking_space_a22e2c189a28f4b56cb73ba807811e6ad}\label{class_parking_space_a22e2c189a28f4b56cb73ba807811e6ad}} 
+\index{Parking\+Space@{Parking\+Space}!reserve@{reserve}}
+\index{reserve@{reserve}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{reserve()}{reserve()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::reserve (\begin{DoxyParamCaption}\item[{tm}]{reserved\+End }\end{DoxyParamCaption})}
+
+
+
+reseve parking space using tm struct 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reserved\+End} & the end time of the parking space reservation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_a22e2c189a28f4b56cb73ba807811e6ad}\label{class_parking_space_a22e2c189a28f4b56cb73ba807811e6ad}} 
+\index{Parking\+Space@{Parking\+Space}!reserve@{reserve}}
+\index{reserve@{reserve}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{reserve()}{reserve()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::reserve (\begin{DoxyParamCaption}\item[{tm}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_space_ab535bca076add6abc31048ea8aff5719}\label{class_parking_space_ab535bca076add6abc31048ea8aff5719}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Occupied@{set\+Occupied}}
+\index{set\+Occupied@{set\+Occupied}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Occupied()}{setOccupied()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Occupied (\begin{DoxyParamCaption}\item[{bool}]{occupied }\end{DoxyParamCaption})}
+
+
+
+set space occupancy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em occupied} & -\/ the booean status of occupancy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_ab535bca076add6abc31048ea8aff5719}\label{class_parking_space_ab535bca076add6abc31048ea8aff5719}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Occupied@{set\+Occupied}}
+\index{set\+Occupied@{set\+Occupied}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Occupied()}{setOccupied()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Occupied (\begin{DoxyParamCaption}\item[{bool}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_space_aac425aba68f7d46d178fb5c33ea0367a}\label{class_parking_space_aac425aba68f7d46d178fb5c33ea0367a}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Reserved\+End@{set\+Reserved\+End}}
+\index{set\+Reserved\+End@{set\+Reserved\+End}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Reserved\+End()}{setReservedEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Reserved\+End (\begin{DoxyParamCaption}\item[{tm}]{reserved\+End }\end{DoxyParamCaption})}
+
+
+
+set reserved end time using a struct 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reserved\+End} & the end time of the parking space reservation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_aac425aba68f7d46d178fb5c33ea0367a}\label{class_parking_space_aac425aba68f7d46d178fb5c33ea0367a}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Reserved\+End@{set\+Reserved\+End}}
+\index{set\+Reserved\+End@{set\+Reserved\+End}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Reserved\+End()}{setReservedEnd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Reserved\+End (\begin{DoxyParamCaption}\item[{tm}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_space_a6a764047ce175633cc5288cede8eba90}\label{class_parking_space_a6a764047ce175633cc5288cede8eba90}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Reserved\+Start@{set\+Reserved\+Start}}
+\index{set\+Reserved\+Start@{set\+Reserved\+Start}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Reserved\+Start()}{setReservedStart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Reserved\+Start (\begin{DoxyParamCaption}\item[{tm}]{reserved\+Start }\end{DoxyParamCaption})}
+
+
+
+set reserved start time using a tm struct 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reserved\+Start} & -\/ the start time for the parking spot reservation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_a6a764047ce175633cc5288cede8eba90}\label{class_parking_space_a6a764047ce175633cc5288cede8eba90}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Reserved\+Start@{set\+Reserved\+Start}}
+\index{set\+Reserved\+Start@{set\+Reserved\+Start}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Reserved\+Start()}{setReservedStart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Reserved\+Start (\begin{DoxyParamCaption}\item[{tm}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_space_a9acf2d76a9b9f84d049b44dd0d4a5c8b}\label{class_parking_space_a9acf2d76a9b9f84d049b44dd0d4a5c8b}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Spot\+ID@{set\+Spot\+ID}}
+\index{set\+Spot\+ID@{set\+Spot\+ID}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Spot\+I\+D()}{setSpotID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Spot\+ID (\begin{DoxyParamCaption}\item[{int}]{spot\+ID }\end{DoxyParamCaption})}
+
+
+
+set spot id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em spot\+ID} & -\/ the spotid you would like to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_a9acf2d76a9b9f84d049b44dd0d4a5c8b}\label{class_parking_space_a9acf2d76a9b9f84d049b44dd0d4a5c8b}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Spot\+ID@{set\+Spot\+ID}}
+\index{set\+Spot\+ID@{set\+Spot\+ID}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Spot\+I\+D()}{setSpotID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Spot\+ID (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_space_a4abd727d17e2045ef0617fb68e8135ed}\label{class_parking_space_a4abd727d17e2045ef0617fb68e8135ed}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Type()}{setType()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{type }\end{DoxyParamCaption})}
+
+
+
+set parking space type 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & -\/ the type of parking space to set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_space_a4abd727d17e2045ef0617fb68e8135ed}\label{class_parking_space_a4abd727d17e2045ef0617fb68e8135ed}} 
+\index{Parking\+Space@{Parking\+Space}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{set\+Type()}{setType()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Space\+::set\+Type (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_parking_space_a296bd26740e110c847c9aa423fec4822}\label{class_parking_space_a296bd26740e110c847c9aa423fec4822}} 
+\index{Parking\+Space@{Parking\+Space}!occupied@{occupied}}
+\index{occupied@{occupied}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{occupied}{occupied}}
+{\footnotesize\ttfamily bool Parking\+Space\+::occupied\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_space_a7bb127221ad5cf6ccfd2ef554efee206}\label{class_parking_space_a7bb127221ad5cf6ccfd2ef554efee206}} 
+\index{Parking\+Space@{Parking\+Space}!reserved\+End@{reserved\+End}}
+\index{reserved\+End@{reserved\+End}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{reserved\+End}{reservedEnd}}
+{\footnotesize\ttfamily struct tm Parking\+Space\+::reserved\+End\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_space_ab67b98142322e1285d24aa7dcca3e40e}\label{class_parking_space_ab67b98142322e1285d24aa7dcca3e40e}} 
+\index{Parking\+Space@{Parking\+Space}!reserved\+Start@{reserved\+Start}}
+\index{reserved\+Start@{reserved\+Start}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{reserved\+Start}{reservedStart}}
+{\footnotesize\ttfamily struct tm Parking\+Space\+::reserved\+Start\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_space_ae636a6e282227d45c0d32b45be0e4e78}\label{class_parking_space_ae636a6e282227d45c0d32b45be0e4e78}} 
+\index{Parking\+Space@{Parking\+Space}!sensor@{sensor}}
+\index{sensor@{sensor}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{sensor}{sensor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sensor}{Sensor}} Parking\+Space\+::sensor\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_space_a73726147c4a69b71b004642fa7be3cf5}\label{class_parking_space_a73726147c4a69b71b004642fa7be3cf5}} 
+\index{Parking\+Space@{Parking\+Space}!spot\+ID@{spot\+ID}}
+\index{spot\+ID@{spot\+ID}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{spot\+ID}{spotID}}
+{\footnotesize\ttfamily int Parking\+Space\+::spot\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_space_abe337abebed765d6255afc5d6d6a907e}\label{class_parking_space_abe337abebed765d6255afc5d6d6a907e}} 
+\index{Parking\+Space@{Parking\+Space}!type@{type}}
+\index{type@{type}!Parking\+Space@{Parking\+Space}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily std\+::string Parking\+Space\+::type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Hardware/\mbox{\hyperlink{_hardware_2_parking_space_8h}{Parking\+Space.\+h}}\item 
+Hardware/\mbox{\hyperlink{_hardware_2_parking_space_8cpp}{Parking\+Space.\+cpp}}\end{DoxyCompactItemize}

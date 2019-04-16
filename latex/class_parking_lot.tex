@@ -1,0 +1,627 @@
+\hypertarget{class_parking_lot}{}\section{Parking\+Lot Class Reference}
+\label{class_parking_lot}\index{Parking\+Lot@{Parking\+Lot}}
+
+
+{\ttfamily \#include $<$Parking\+Lot.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_parking_lot_af06c47fd4a50e7b2215cf2867876cc0c}{Parking\+Lot}} (std\+::string \mbox{\hyperlink{class_parking_lot_aaef3c99a2d6e7398325db451183c9cae}{name}}, std\+::string \mbox{\hyperlink{class_parking_lot_a0a2cd92fd4fb8e78530613df950a44bb}{address}}, int \mbox{\hyperlink{class_parking_lot_aa8002685719766c66877ab35d4f80f17}{lot\+ID}}, double \mbox{\hyperlink{class_parking_lot_a1b80d2bddbd40ebe71d8b89a00410e03}{parking\+Rate}}, tm \mbox{\hyperlink{class_parking_lot_ae3607cdf93ec2858e0ce1214c950b255}{closing\+Time}}, tm \mbox{\hyperlink{class_parking_lot_af6162bf724fb438c5c703989ce0bd10a}{opening\+Time}})
+\item 
+void \mbox{\hyperlink{class_parking_lot_accb1a328bc13823a502e27d099e4d724}{set\+Opening\+Time}} (tm)
+\begin{DoxyCompactList}\small\item\em set parking lot opening time \end{DoxyCompactList}\item 
+tm \mbox{\hyperlink{class_parking_lot_a08f4debc52d08ef0050c81e18a5759e5}{get\+Opening\+Time}} ()
+\begin{DoxyCompactList}\small\item\em get parking lot opening time \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_lot_a1406d44ee8d0dcb0c192176d706b437c}{set\+Closing\+Time}} (tm)
+\begin{DoxyCompactList}\small\item\em set parking lot closing time \end{DoxyCompactList}\item 
+tm \mbox{\hyperlink{class_parking_lot_a645ab3d930184975d74814aea73cd684}{get\+Closing\+Time}} ()
+\begin{DoxyCompactList}\small\item\em get parking lot closing time \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_lot_af51fbe3b4f7aa25f69f44277d7e9394c}{set\+Name}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em set parking lot name \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_parking_lot_a4d1dc6ef9517b87a9bfff1fd64c8cb41}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em get parking lot name \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_lot_addf77ed29c0befc4ad0ff5cae838fd35}{set\+Address}} (std\+::string)
+\begin{DoxyCompactList}\small\item\em set parking lot address \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_parking_lot_ab98122d5436d034705ac94f09fde28ae}{get\+Address}} ()
+\begin{DoxyCompactList}\small\item\em get parking lot address \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_lot_a993a56b286a57424100cb90f815847a1}{add\+Space}} (\mbox{\hyperlink{class_parking_space}{Parking\+Space}})
+\begin{DoxyCompactList}\small\item\em add a parking space to parking lot \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_lot_a2ff1620a479383eb08ffa33474c41c22}{remove\+Space}} (int space\+ID)
+\begin{DoxyCompactList}\small\item\em remove a space from parking lot \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_parking_space}{Parking\+Space}} \mbox{\hyperlink{class_parking_lot_ae9420690a078541084aa1fcb35f644fc}{get\+Space}} (int space\+ID)
+\begin{DoxyCompactList}\small\item\em get a space from parking lot \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_lot_a0e8557c93fba850a9cdbd9e76d49a3eb}{set\+Rate}} (double)
+\begin{DoxyCompactList}\small\item\em set rate of parking lot \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_parking_lot_abd4aba799c6f13e467ed0b5e17ef70eb}{get\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em get rate of parking lot \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_lot_a10ff48e3483395f5fa7fd15a80913515}{set\+Lot\+ID}} (int)
+\begin{DoxyCompactList}\small\item\em set parking lot id \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_parking_lot_ac6269a82ab516553047cefacc229e5e0}{get\+Lot\+ID}} ()
+\begin{DoxyCompactList}\small\item\em get parking lot id \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_lot_a92c159f21260da7fd2bba061f1781382}{update}} ()
+\begin{DoxyCompactList}\small\item\em updates parking lot and its spaces \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_parking_lot_a7d749c2ac49c9e84d33b21d29a288ebf}{map\+Sensor\+To\+Lot}} (int, \mbox{\hyperlink{class_parking_space}{Parking\+Space}} $\ast$)
+\begin{DoxyCompactList}\small\item\em inserts sensors in parking spaces \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_parking_lot_a8a52aa523041af660f59ac566f7af780}{add\+Sensor\+Block}} (\mbox{\hyperlink{class_sensor_block}{Sensor\+Block}})
+\begin{DoxyCompactList}\small\item\em adds sensor block \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_parking_lot_a3ad5598c96642089744b786bd131f308}{map\+Sensor\+To\+Lot}} (int, int)
+\begin{DoxyCompactList}\small\item\em inserts sensors in parking spaces \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_parking_lot_af06c47fd4a50e7b2215cf2867876cc0c}{Parking\+Lot}} (std\+::string \mbox{\hyperlink{class_parking_lot_aaef3c99a2d6e7398325db451183c9cae}{name}}, std\+::string \mbox{\hyperlink{class_parking_lot_a0a2cd92fd4fb8e78530613df950a44bb}{address}}, int \mbox{\hyperlink{class_parking_lot_aa8002685719766c66877ab35d4f80f17}{lot\+ID}}, double \mbox{\hyperlink{class_parking_lot_a1b80d2bddbd40ebe71d8b89a00410e03}{parking\+Rate}}, tm \mbox{\hyperlink{class_parking_lot_ae3607cdf93ec2858e0ce1214c950b255}{closing\+Time}}, tm \mbox{\hyperlink{class_parking_lot_af6162bf724fb438c5c703989ce0bd10a}{opening\+Time}})
+\item 
+void \mbox{\hyperlink{class_parking_lot_accb1a328bc13823a502e27d099e4d724}{set\+Opening\+Time}} (tm)
+\item 
+tm \mbox{\hyperlink{class_parking_lot_a08f4debc52d08ef0050c81e18a5759e5}{get\+Opening\+Time}} ()
+\item 
+void \mbox{\hyperlink{class_parking_lot_a1406d44ee8d0dcb0c192176d706b437c}{set\+Closing\+Time}} (tm)
+\item 
+tm \mbox{\hyperlink{class_parking_lot_a645ab3d930184975d74814aea73cd684}{get\+Closing\+Time}} ()
+\item 
+void \mbox{\hyperlink{class_parking_lot_af51fbe3b4f7aa25f69f44277d7e9394c}{set\+Name}} (std\+::string)
+\item 
+std\+::string \mbox{\hyperlink{class_parking_lot_a4d1dc6ef9517b87a9bfff1fd64c8cb41}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_parking_lot_addf77ed29c0befc4ad0ff5cae838fd35}{set\+Address}} (std\+::string)
+\item 
+std\+::string \mbox{\hyperlink{class_parking_lot_ab98122d5436d034705ac94f09fde28ae}{get\+Address}} ()
+\item 
+void \mbox{\hyperlink{class_parking_lot_a993a56b286a57424100cb90f815847a1}{add\+Space}} (\mbox{\hyperlink{class_parking_space}{Parking\+Space}})
+\item 
+\mbox{\hyperlink{class_parking_space}{Parking\+Space}} \mbox{\hyperlink{class_parking_lot_ae9420690a078541084aa1fcb35f644fc}{get\+Space}} (int space\+ID)
+\item 
+void \mbox{\hyperlink{class_parking_lot_a2ff1620a479383eb08ffa33474c41c22}{remove\+Space}} (int space\+ID)
+\item 
+void \mbox{\hyperlink{class_parking_lot_a0e8557c93fba850a9cdbd9e76d49a3eb}{set\+Rate}} (double)
+\item 
+double \mbox{\hyperlink{class_parking_lot_abd4aba799c6f13e467ed0b5e17ef70eb}{get\+Rate}} ()
+\item 
+void \mbox{\hyperlink{class_parking_lot_a10ff48e3483395f5fa7fd15a80913515}{set\+Lot\+ID}} (int)
+\item 
+int \mbox{\hyperlink{class_parking_lot_ac6269a82ab516553047cefacc229e5e0}{get\+Lot\+ID}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_parking_space}{Parking\+Space}} $>$ \mbox{\hyperlink{class_parking_lot_ab4e93d05c1bb85849504c26cb12a6813}{spaces}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_sensor_block}{Sensor\+Block}} $>$ \mbox{\hyperlink{class_parking_lot_ab5c594dda31fdbef491887eb57162658}{blocks}}
+\item 
+std\+::map$<$ int, \mbox{\hyperlink{class_parking_space}{Parking\+Space}} $\ast$ $>$ \mbox{\hyperlink{class_parking_lot_a238562d70b99f294898ddf21972d51c3}{sensor\+To\+Lot}}
+\item 
+int \mbox{\hyperlink{class_parking_lot_aa8002685719766c66877ab35d4f80f17}{lot\+ID}}
+\item 
+struct tm \mbox{\hyperlink{class_parking_lot_af6162bf724fb438c5c703989ce0bd10a}{opening\+Time}}
+\item 
+struct tm \mbox{\hyperlink{class_parking_lot_ae3607cdf93ec2858e0ce1214c950b255}{closing\+Time}}
+\item 
+std\+::string \mbox{\hyperlink{class_parking_lot_aaef3c99a2d6e7398325db451183c9cae}{name}}
+\item 
+std\+::string \mbox{\hyperlink{class_parking_lot_a0a2cd92fd4fb8e78530613df950a44bb}{address}}
+\item 
+double \mbox{\hyperlink{class_parking_lot_a1b80d2bddbd40ebe71d8b89a00410e03}{parking\+Rate}}
+\item 
+\mbox{\hyperlink{class_database_proxy}{Database\+Proxy}} \mbox{\hyperlink{class_parking_lot_a4eef5645d82097e7b1ab4c417f27ecff}{database}} = database.\+instance()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_parking_lot_af06c47fd4a50e7b2215cf2867876cc0c}\label{class_parking_lot_af06c47fd4a50e7b2215cf2867876cc0c}} 
+\index{Parking\+Lot@{Parking\+Lot}!Parking\+Lot@{Parking\+Lot}}
+\index{Parking\+Lot@{Parking\+Lot}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{Parking\+Lot()}{ParkingLot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Parking\+Lot\+::\+Parking\+Lot (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{address,  }\item[{int}]{lot\+ID,  }\item[{double}]{parking\+Rate,  }\item[{tm}]{closing\+Time,  }\item[{tm}]{opening\+Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_af06c47fd4a50e7b2215cf2867876cc0c}\label{class_parking_lot_af06c47fd4a50e7b2215cf2867876cc0c}} 
+\index{Parking\+Lot@{Parking\+Lot}!Parking\+Lot@{Parking\+Lot}}
+\index{Parking\+Lot@{Parking\+Lot}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{Parking\+Lot()}{ParkingLot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Parking\+Lot\+::\+Parking\+Lot (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{address,  }\item[{int}]{lot\+ID,  }\item[{double}]{parking\+Rate,  }\item[{tm}]{closing\+Time,  }\item[{tm}]{opening\+Time }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_parking_lot_a8a52aa523041af660f59ac566f7af780}\label{class_parking_lot_a8a52aa523041af660f59ac566f7af780}} 
+\index{Parking\+Lot@{Parking\+Lot}!add\+Sensor\+Block@{add\+Sensor\+Block}}
+\index{add\+Sensor\+Block@{add\+Sensor\+Block}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{add\+Sensor\+Block()}{addSensorBlock()}}
+{\footnotesize\ttfamily void Parking\+Lot\+::add\+Sensor\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sensor_block}{Sensor\+Block}}}]{block }\end{DoxyParamCaption})}
+
+
+
+adds sensor block 
+
+
+\begin{DoxyParams}{Parameters}
+{\em block} & ; sensor block \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a993a56b286a57424100cb90f815847a1}\label{class_parking_lot_a993a56b286a57424100cb90f815847a1}} 
+\index{Parking\+Lot@{Parking\+Lot}!add\+Space@{add\+Space}}
+\index{add\+Space@{add\+Space}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{add\+Space()}{addSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::add\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_parking_space}{Parking\+Space}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_a993a56b286a57424100cb90f815847a1}\label{class_parking_lot_a993a56b286a57424100cb90f815847a1}} 
+\index{Parking\+Lot@{Parking\+Lot}!add\+Space@{add\+Space}}
+\index{add\+Space@{add\+Space}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{add\+Space()}{addSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::add\+Space (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_parking_space}{Parking\+Space}}}]{space }\end{DoxyParamCaption})}
+
+
+
+add a parking space to parking lot 
+
+
+\begin{DoxyParams}{Parameters}
+{\em space} & -\/ \mbox{\hyperlink{class_parking_space}{Parking\+Space}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_ab98122d5436d034705ac94f09fde28ae}\label{class_parking_lot_ab98122d5436d034705ac94f09fde28ae}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Address@{get\+Address}}
+\index{get\+Address@{get\+Address}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Address()}{getAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Parking\+Lot\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_ab98122d5436d034705ac94f09fde28ae}\label{class_parking_lot_ab98122d5436d034705ac94f09fde28ae}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Address@{get\+Address}}
+\index{get\+Address@{get\+Address}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Address()}{getAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Parking\+Lot\+::get\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get parking lot address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+address -\/ string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a645ab3d930184975d74814aea73cd684}\label{class_parking_lot_a645ab3d930184975d74814aea73cd684}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Closing\+Time@{get\+Closing\+Time}}
+\index{get\+Closing\+Time@{get\+Closing\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Closing\+Time()}{getClosingTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily tm Parking\+Lot\+::get\+Closing\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_a645ab3d930184975d74814aea73cd684}\label{class_parking_lot_a645ab3d930184975d74814aea73cd684}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Closing\+Time@{get\+Closing\+Time}}
+\index{get\+Closing\+Time@{get\+Closing\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Closing\+Time()}{getClosingTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily tm Parking\+Lot\+::get\+Closing\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get parking lot closing time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+closing\+Time -\/ tm struct 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_ac6269a82ab516553047cefacc229e5e0}\label{class_parking_lot_ac6269a82ab516553047cefacc229e5e0}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Lot\+ID@{get\+Lot\+ID}}
+\index{get\+Lot\+ID@{get\+Lot\+ID}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Lot\+I\+D()}{getLotID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Parking\+Lot\+::get\+Lot\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_ac6269a82ab516553047cefacc229e5e0}\label{class_parking_lot_ac6269a82ab516553047cefacc229e5e0}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Lot\+ID@{get\+Lot\+ID}}
+\index{get\+Lot\+ID@{get\+Lot\+ID}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Lot\+I\+D()}{getLotID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Parking\+Lot\+::get\+Lot\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get parking lot id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lot\+ID -\/ int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a4d1dc6ef9517b87a9bfff1fd64c8cb41}\label{class_parking_lot_a4d1dc6ef9517b87a9bfff1fd64c8cb41}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::string Parking\+Lot\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_a4d1dc6ef9517b87a9bfff1fd64c8cb41}\label{class_parking_lot_a4d1dc6ef9517b87a9bfff1fd64c8cb41}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::string Parking\+Lot\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get parking lot name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+name -\/ string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a08f4debc52d08ef0050c81e18a5759e5}\label{class_parking_lot_a08f4debc52d08ef0050c81e18a5759e5}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Opening\+Time@{get\+Opening\+Time}}
+\index{get\+Opening\+Time@{get\+Opening\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Opening\+Time()}{getOpeningTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily tm Parking\+Lot\+::get\+Opening\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_a08f4debc52d08ef0050c81e18a5759e5}\label{class_parking_lot_a08f4debc52d08ef0050c81e18a5759e5}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Opening\+Time@{get\+Opening\+Time}}
+\index{get\+Opening\+Time@{get\+Opening\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Opening\+Time()}{getOpeningTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily tm Parking\+Lot\+::get\+Opening\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get parking lot opening time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+opening\+Time -\/ tm struct 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_abd4aba799c6f13e467ed0b5e17ef70eb}\label{class_parking_lot_abd4aba799c6f13e467ed0b5e17ef70eb}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Rate@{get\+Rate}}
+\index{get\+Rate@{get\+Rate}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Rate()}{getRate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Parking\+Lot\+::get\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_abd4aba799c6f13e467ed0b5e17ef70eb}\label{class_parking_lot_abd4aba799c6f13e467ed0b5e17ef70eb}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Rate@{get\+Rate}}
+\index{get\+Rate@{get\+Rate}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Rate()}{getRate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Parking\+Lot\+::get\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get rate of parking lot 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parking\+Rate -\/ double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_ae9420690a078541084aa1fcb35f644fc}\label{class_parking_lot_ae9420690a078541084aa1fcb35f644fc}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Space@{get\+Space}}
+\index{get\+Space@{get\+Space}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Space()}{getSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_parking_space}{Parking\+Space}} Parking\+Lot\+::get\+Space (\begin{DoxyParamCaption}\item[{int}]{space\+ID }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_ae9420690a078541084aa1fcb35f644fc}\label{class_parking_lot_ae9420690a078541084aa1fcb35f644fc}} 
+\index{Parking\+Lot@{Parking\+Lot}!get\+Space@{get\+Space}}
+\index{get\+Space@{get\+Space}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{get\+Space()}{getSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_parking_space}{Parking\+Space}} Parking\+Lot\+::get\+Space (\begin{DoxyParamCaption}\item[{int}]{space\+ID }\end{DoxyParamCaption})}
+
+
+
+get a space from parking lot 
+
+
+\begin{DoxyParams}{Parameters}
+{\em space\+ID} & -\/ int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_parking_space}{Parking\+Space}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a7d749c2ac49c9e84d33b21d29a288ebf}\label{class_parking_lot_a7d749c2ac49c9e84d33b21d29a288ebf}} 
+\index{Parking\+Lot@{Parking\+Lot}!map\+Sensor\+To\+Lot@{map\+Sensor\+To\+Lot}}
+\index{map\+Sensor\+To\+Lot@{map\+Sensor\+To\+Lot}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{map\+Sensor\+To\+Lot()}{mapSensorToLot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Parking\+Lot\+::map\+Sensor\+To\+Lot (\begin{DoxyParamCaption}\item[{int}]{sensor\+ID,  }\item[{\mbox{\hyperlink{class_parking_space}{Parking\+Space}} $\ast$}]{space }\end{DoxyParamCaption})}
+
+
+
+inserts sensors in parking spaces 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+ID} & -\/ int \\
+\hline
+{\em space} & -\/ \mbox{\hyperlink{class_parking_space}{Parking\+Space}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a3ad5598c96642089744b786bd131f308}\label{class_parking_lot_a3ad5598c96642089744b786bd131f308}} 
+\index{Parking\+Lot@{Parking\+Lot}!map\+Sensor\+To\+Lot@{map\+Sensor\+To\+Lot}}
+\index{map\+Sensor\+To\+Lot@{map\+Sensor\+To\+Lot}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{map\+Sensor\+To\+Lot()}{mapSensorToLot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Parking\+Lot\+::map\+Sensor\+To\+Lot (\begin{DoxyParamCaption}\item[{int}]{sensor\+ID,  }\item[{int}]{space\+ID }\end{DoxyParamCaption})}
+
+
+
+inserts sensors in parking spaces 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensor\+ID} & -\/ int \\
+\hline
+{\em space\+ID} & -\/ \mbox{\hyperlink{class_parking_space}{Parking\+Space}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 or 1 based on success 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a2ff1620a479383eb08ffa33474c41c22}\label{class_parking_lot_a2ff1620a479383eb08ffa33474c41c22}} 
+\index{Parking\+Lot@{Parking\+Lot}!remove\+Space@{remove\+Space}}
+\index{remove\+Space@{remove\+Space}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{remove\+Space()}{removeSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::remove\+Space (\begin{DoxyParamCaption}\item[{int}]{space\+ID }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_a2ff1620a479383eb08ffa33474c41c22}\label{class_parking_lot_a2ff1620a479383eb08ffa33474c41c22}} 
+\index{Parking\+Lot@{Parking\+Lot}!remove\+Space@{remove\+Space}}
+\index{remove\+Space@{remove\+Space}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{remove\+Space()}{removeSpace()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::remove\+Space (\begin{DoxyParamCaption}\item[{int}]{space\+ID }\end{DoxyParamCaption})}
+
+
+
+remove a space from parking lot 
+
+
+\begin{DoxyParams}{Parameters}
+{\em space\+ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_addf77ed29c0befc4ad0ff5cae838fd35}\label{class_parking_lot_addf77ed29c0befc4ad0ff5cae838fd35}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Address@{set\+Address}}
+\index{set\+Address@{set\+Address}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Address()}{setAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Address (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_addf77ed29c0befc4ad0ff5cae838fd35}\label{class_parking_lot_addf77ed29c0befc4ad0ff5cae838fd35}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Address@{set\+Address}}
+\index{set\+Address@{set\+Address}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Address()}{setAddress()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Address (\begin{DoxyParamCaption}\item[{std\+::string}]{address }\end{DoxyParamCaption})}
+
+
+
+set parking lot address 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & -\/ string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a1406d44ee8d0dcb0c192176d706b437c}\label{class_parking_lot_a1406d44ee8d0dcb0c192176d706b437c}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Closing\+Time@{set\+Closing\+Time}}
+\index{set\+Closing\+Time@{set\+Closing\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Closing\+Time()}{setClosingTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Closing\+Time (\begin{DoxyParamCaption}\item[{tm}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_a1406d44ee8d0dcb0c192176d706b437c}\label{class_parking_lot_a1406d44ee8d0dcb0c192176d706b437c}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Closing\+Time@{set\+Closing\+Time}}
+\index{set\+Closing\+Time@{set\+Closing\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Closing\+Time()}{setClosingTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Closing\+Time (\begin{DoxyParamCaption}\item[{tm}]{ }\end{DoxyParamCaption})}
+
+
+
+set parking lot closing time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tm} & -\/ tm struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a10ff48e3483395f5fa7fd15a80913515}\label{class_parking_lot_a10ff48e3483395f5fa7fd15a80913515}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Lot\+ID@{set\+Lot\+ID}}
+\index{set\+Lot\+ID@{set\+Lot\+ID}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Lot\+I\+D()}{setLotID()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Lot\+ID (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_a10ff48e3483395f5fa7fd15a80913515}\label{class_parking_lot_a10ff48e3483395f5fa7fd15a80913515}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Lot\+ID@{set\+Lot\+ID}}
+\index{set\+Lot\+ID@{set\+Lot\+ID}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Lot\+I\+D()}{setLotID()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Lot\+ID (\begin{DoxyParamCaption}\item[{int}]{lot\+ID }\end{DoxyParamCaption})}
+
+
+
+set parking lot id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lot\+ID} & -\/ int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_af51fbe3b4f7aa25f69f44277d7e9394c}\label{class_parking_lot_af51fbe3b4f7aa25f69f44277d7e9394c}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_af51fbe3b4f7aa25f69f44277d7e9394c}\label{class_parking_lot_af51fbe3b4f7aa25f69f44277d7e9394c}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+set parking lot name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_accb1a328bc13823a502e27d099e4d724}\label{class_parking_lot_accb1a328bc13823a502e27d099e4d724}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Opening\+Time@{set\+Opening\+Time}}
+\index{set\+Opening\+Time@{set\+Opening\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Opening\+Time()}{setOpeningTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Opening\+Time (\begin{DoxyParamCaption}\item[{tm}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_accb1a328bc13823a502e27d099e4d724}\label{class_parking_lot_accb1a328bc13823a502e27d099e4d724}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Opening\+Time@{set\+Opening\+Time}}
+\index{set\+Opening\+Time@{set\+Opening\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Opening\+Time()}{setOpeningTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Opening\+Time (\begin{DoxyParamCaption}\item[{tm}]{opening\+Time }\end{DoxyParamCaption})}
+
+
+
+set parking lot opening time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opening\+Time} & -\/ tm struct \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+opening\+Time -\/ tm struct 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a0e8557c93fba850a9cdbd9e76d49a3eb}\label{class_parking_lot_a0e8557c93fba850a9cdbd9e76d49a3eb}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Rate@{set\+Rate}}
+\index{set\+Rate@{set\+Rate}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Rate()}{setRate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Rate (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_parking_lot_a0e8557c93fba850a9cdbd9e76d49a3eb}\label{class_parking_lot_a0e8557c93fba850a9cdbd9e76d49a3eb}} 
+\index{Parking\+Lot@{Parking\+Lot}!set\+Rate@{set\+Rate}}
+\index{set\+Rate@{set\+Rate}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{set\+Rate()}{setRate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Parking\+Lot\+::set\+Rate (\begin{DoxyParamCaption}\item[{double}]{parking\+Rate }\end{DoxyParamCaption})}
+
+
+
+set rate of parking lot 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parking\+Rate} & -\/ double \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+parking\+Rate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_parking_lot_a92c159f21260da7fd2bba061f1781382}\label{class_parking_lot_a92c159f21260da7fd2bba061f1781382}} 
+\index{Parking\+Lot@{Parking\+Lot}!update@{update}}
+\index{update@{update}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Parking\+Lot\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+updates parking lot and its spaces 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_parking_lot_a0a2cd92fd4fb8e78530613df950a44bb}\label{class_parking_lot_a0a2cd92fd4fb8e78530613df950a44bb}} 
+\index{Parking\+Lot@{Parking\+Lot}!address@{address}}
+\index{address@{address}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily std\+::string Parking\+Lot\+::address\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_lot_ab5c594dda31fdbef491887eb57162658}\label{class_parking_lot_ab5c594dda31fdbef491887eb57162658}} 
+\index{Parking\+Lot@{Parking\+Lot}!blocks@{blocks}}
+\index{blocks@{blocks}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{blocks}{blocks}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_sensor_block}{Sensor\+Block}}$>$ Parking\+Lot\+::blocks\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_lot_ae3607cdf93ec2858e0ce1214c950b255}\label{class_parking_lot_ae3607cdf93ec2858e0ce1214c950b255}} 
+\index{Parking\+Lot@{Parking\+Lot}!closing\+Time@{closing\+Time}}
+\index{closing\+Time@{closing\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{closing\+Time}{closingTime}}
+{\footnotesize\ttfamily struct tm Parking\+Lot\+::closing\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_lot_a4eef5645d82097e7b1ab4c417f27ecff}\label{class_parking_lot_a4eef5645d82097e7b1ab4c417f27ecff}} 
+\index{Parking\+Lot@{Parking\+Lot}!database@{database}}
+\index{database@{database}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_database_proxy}{Database\+Proxy}} Parking\+Lot\+::database = database.\+instance()\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_lot_aa8002685719766c66877ab35d4f80f17}\label{class_parking_lot_aa8002685719766c66877ab35d4f80f17}} 
+\index{Parking\+Lot@{Parking\+Lot}!lot\+ID@{lot\+ID}}
+\index{lot\+ID@{lot\+ID}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{lot\+ID}{lotID}}
+{\footnotesize\ttfamily int Parking\+Lot\+::lot\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_lot_aaef3c99a2d6e7398325db451183c9cae}\label{class_parking_lot_aaef3c99a2d6e7398325db451183c9cae}} 
+\index{Parking\+Lot@{Parking\+Lot}!name@{name}}
+\index{name@{name}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Parking\+Lot\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_lot_af6162bf724fb438c5c703989ce0bd10a}\label{class_parking_lot_af6162bf724fb438c5c703989ce0bd10a}} 
+\index{Parking\+Lot@{Parking\+Lot}!opening\+Time@{opening\+Time}}
+\index{opening\+Time@{opening\+Time}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{opening\+Time}{openingTime}}
+{\footnotesize\ttfamily struct tm Parking\+Lot\+::opening\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_lot_a1b80d2bddbd40ebe71d8b89a00410e03}\label{class_parking_lot_a1b80d2bddbd40ebe71d8b89a00410e03}} 
+\index{Parking\+Lot@{Parking\+Lot}!parking\+Rate@{parking\+Rate}}
+\index{parking\+Rate@{parking\+Rate}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{parking\+Rate}{parkingRate}}
+{\footnotesize\ttfamily double Parking\+Lot\+::parking\+Rate\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_lot_a238562d70b99f294898ddf21972d51c3}\label{class_parking_lot_a238562d70b99f294898ddf21972d51c3}} 
+\index{Parking\+Lot@{Parking\+Lot}!sensor\+To\+Lot@{sensor\+To\+Lot}}
+\index{sensor\+To\+Lot@{sensor\+To\+Lot}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{sensor\+To\+Lot}{sensorToLot}}
+{\footnotesize\ttfamily std\+::map$<$int, \mbox{\hyperlink{class_parking_space}{Parking\+Space}}$\ast$$>$ Parking\+Lot\+::sensor\+To\+Lot\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_parking_lot_ab4e93d05c1bb85849504c26cb12a6813}\label{class_parking_lot_ab4e93d05c1bb85849504c26cb12a6813}} 
+\index{Parking\+Lot@{Parking\+Lot}!spaces@{spaces}}
+\index{spaces@{spaces}!Parking\+Lot@{Parking\+Lot}}
+\subsubsection{\texorpdfstring{spaces}{spaces}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_parking_space}{Parking\+Space}} $>$ Parking\+Lot\+::spaces\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Hardware/\mbox{\hyperlink{_hardware_2_parking_lot_8h}{Parking\+Lot.\+h}}\item 
+Hardware/\mbox{\hyperlink{_parking_lot_8cpp}{Parking\+Lot.\+cpp}}\end{DoxyCompactItemize}

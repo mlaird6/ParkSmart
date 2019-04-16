@@ -1,0 +1,235 @@
+\hypertarget{_web_server_8cpp}{}\section{src/servers/\+Web\+Server.cpp File Reference}
+\label{_web_server_8cpp}\index{src/servers/\+Web\+Server.\+cpp@{src/servers/\+Web\+Server.\+cpp}}
+
+
+Main entry point to start server.  
+
+
+{\ttfamily \#include \char`\"{}../../include/servers/\+Web\+Server.\+hpp\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_web_server_8cpp_a9b6de0e26f74363b0c360e2a4020f035}{R\+E\+G\+I\+S\+T\+ER}}~1
+\item 
+\#define \mbox{\hyperlink{_web_server_8cpp_a2cc44bf853cfd679b56807b198735596}{L\+O\+G\+IN}}~2
+\item 
+\#define \mbox{\hyperlink{_web_server_8cpp_ad24e2b54375e12474e65ebf7175988fb}{Q\+U\+IT}}~3
+\item 
+\#define \mbox{\hyperlink{_web_server_8cpp_aa8f8564a6944121058f4c4278894ead1}{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+E\+N\+S\+O\+RS}}~5
+\item 
+\#define \mbox{\hyperlink{_web_server_8cpp_a9990feb02a1445f0170a5c4fb32bfe48}{B\+L\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS}}~0x04
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{_web_server_8cpp_a1f8cf2e89747276e79b7a1221e1ffbae}{sensormain}} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em function to handle the sensor subsystem \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_web_server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em entry point into application, running the listening server \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{_web_server_8cpp_a9577d2599b18e4680156b949c3683bcc}{handle\+\_\+client}} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em function for handling individual clients \end{DoxyCompactList}\item 
+Logged\+In\+User $\ast$ \mbox{\hyperlink{_web_server_8cpp_a4967b385dad874e49c4ae8d71a902044}{register\+\_\+menu}} (Socket socket, Authentication\+Server auth)
+\begin{DoxyCompactList}\small\item\em displays the menu for registering a user \end{DoxyCompactList}\item 
+Logged\+In\+User $\ast$ \mbox{\hyperlink{_web_server_8cpp_a0d484100c57a643907e1dcd5a181661b}{login\+\_\+menu}} (Socket socket, Authentication\+Server auth)
+\begin{DoxyCompactList}\small\item\em displays the menu for logging in \end{DoxyCompactList}\item 
+Logged\+In\+User $\ast$ \mbox{\hyperlink{_web_server_8cpp_a9423d162043347ffe3b8392aa5849125}{create\+\_\+user}} (string username, string password, string fname, string lname, string license\+\_\+num, int pregnant, int disability, string vehicle\+\_\+type, int driver, int lot\+\_\+owner)
+\begin{DoxyCompactList}\small\item\em takes in user input and enters user into database \end{DoxyCompactList}\item 
+Logged\+In\+User $\ast$ \mbox{\hyperlink{_web_server_8cpp_a3e2184998577bce35e27403b4ab316af}{login}} (string username, string password)
+\begin{DoxyCompactList}\small\item\em takes in user input to log the user in \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{_web_server_8cpp_a9e1c2b0dc7138bd8afe7b0e0c6857ecc}{get\+I\+P\+Address}} ()
+\begin{DoxyCompactList}\small\item\em gets the ip address of the machine \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{_web_server_8cpp_a0abaf4b5d42c4e5d19190035fade3599}{lock}}
+\item 
+Database\+Proxy \mbox{\hyperlink{_web_server_8cpp_af88b94fcfed32e7cd2de2e2f755943de}{database}} = database.\+instance()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main entry point to start server. 
+
+Opens a socket to listen for connecting clients, once a client connects creates thread to handle that specific client with a new Socket object
+
+  \begin{DoxyAuthor}{Author}
+Melina Laird   
+
+Mike Levis   
+
+Jake Mclaughlin; primary author   
+
+Nicholas Tocco   
+
+Katherine Zambrano 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000022}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_web_server_8cpp_a9990feb02a1445f0170a5c4fb32bfe48}\label{_web_server_8cpp_a9990feb02a1445f0170a5c4fb32bfe48}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!B\+L\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS@{B\+L\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{B\+L\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS@{B\+L\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{B\+L\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS}{BLOCK\_ADDRESS}}
+{\footnotesize\ttfamily \#define B\+L\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS~0x04}
+
+\mbox{\Hypertarget{_web_server_8cpp_a2cc44bf853cfd679b56807b198735596}\label{_web_server_8cpp_a2cc44bf853cfd679b56807b198735596}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!L\+O\+G\+IN@{L\+O\+G\+IN}}
+\index{L\+O\+G\+IN@{L\+O\+G\+IN}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{L\+O\+G\+IN}{LOGIN}}
+{\footnotesize\ttfamily \#define L\+O\+G\+IN~2}
+
+\mbox{\Hypertarget{_web_server_8cpp_aa8f8564a6944121058f4c4278894ead1}\label{_web_server_8cpp_aa8f8564a6944121058f4c4278894ead1}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+E\+N\+S\+O\+RS@{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+E\+N\+S\+O\+RS}}
+\index{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+E\+N\+S\+O\+RS@{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+E\+N\+S\+O\+RS}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+E\+N\+S\+O\+RS}{NUMBER\_OF\_SENSORS}}
+{\footnotesize\ttfamily \#define N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+S\+E\+N\+S\+O\+RS~5}
+
+\mbox{\Hypertarget{_web_server_8cpp_ad24e2b54375e12474e65ebf7175988fb}\label{_web_server_8cpp_ad24e2b54375e12474e65ebf7175988fb}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!Q\+U\+IT@{Q\+U\+IT}}
+\index{Q\+U\+IT@{Q\+U\+IT}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{Q\+U\+IT}{QUIT}}
+{\footnotesize\ttfamily \#define Q\+U\+IT~3}
+
+\mbox{\Hypertarget{_web_server_8cpp_a9b6de0e26f74363b0c360e2a4020f035}\label{_web_server_8cpp_a9b6de0e26f74363b0c360e2a4020f035}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!R\+E\+G\+I\+S\+T\+ER@{R\+E\+G\+I\+S\+T\+ER}}
+\index{R\+E\+G\+I\+S\+T\+ER@{R\+E\+G\+I\+S\+T\+ER}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{R\+E\+G\+I\+S\+T\+ER}{REGISTER}}
+{\footnotesize\ttfamily \#define R\+E\+G\+I\+S\+T\+ER~1}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_web_server_8cpp_a9423d162043347ffe3b8392aa5849125}\label{_web_server_8cpp_a9423d162043347ffe3b8392aa5849125}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!create\+\_\+user@{create\+\_\+user}}
+\index{create\+\_\+user@{create\+\_\+user}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{create\+\_\+user()}{create\_user()}}
+{\footnotesize\ttfamily Logged\+In\+User$\ast$ create\+\_\+user (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{fname,  }\item[{string}]{lname,  }\item[{string}]{license\+\_\+num,  }\item[{int}]{pregnant,  }\item[{int}]{disability,  }\item[{string}]{vehicle\+\_\+type,  }\item[{int}]{driver,  }\item[{int}]{lot\+\_\+owner }\end{DoxyParamCaption})}
+
+
+
+takes in user input and enters user into database 
+
+create\+\_\+user   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin; primary author  username\+: string  password\+: string  fname\+: string  lname\+: string  license\+\_\+num\+: string  pregnant\+: int (0 for false, 1 for true)  disability\+: int (0 for false, 1 for true)  vehicle\+\_\+type\+: string  driver\+: int (0 for false, 1 for true)  lot\+\_\+owner\+: int (0 for false, 1 for true) 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Logged\+In\+User object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_web_server_8cpp_a9e1c2b0dc7138bd8afe7b0e0c6857ecc}\label{_web_server_8cpp_a9e1c2b0dc7138bd8afe7b0e0c6857ecc}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!get\+I\+P\+Address@{get\+I\+P\+Address}}
+\index{get\+I\+P\+Address@{get\+I\+P\+Address}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{get\+I\+P\+Address()}{getIPAddress()}}
+{\footnotesize\ttfamily string get\+I\+P\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the ip address of the machine 
+
+get\+I\+Paddress()   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin; primary author  username\+: string  password\+: string 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Logged\+In\+User object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_web_server_8cpp_a9577d2599b18e4680156b949c3683bcc}\label{_web_server_8cpp_a9577d2599b18e4680156b949c3683bcc}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!handle\+\_\+client@{handle\+\_\+client}}
+\index{handle\+\_\+client@{handle\+\_\+client}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{handle\+\_\+client()}{handle\_client()}}
+{\footnotesize\ttfamily void$\ast$ handle\+\_\+client (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption})}
+
+
+
+function for handling individual clients 
+
+handle\+\_\+client.\+cpp   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin  client socket 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{_web_server_8cpp_a3e2184998577bce35e27403b4ab316af}\label{_web_server_8cpp_a3e2184998577bce35e27403b4ab316af}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!login@{login}}
+\index{login@{login}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily Logged\+In\+User$\ast$ login (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+takes in user input to log the user in 
+
+log\+\_\+in   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin; primary author  username\+: string  password\+: string 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Logged\+In\+User object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_web_server_8cpp_a0d484100c57a643907e1dcd5a181661b}\label{_web_server_8cpp_a0d484100c57a643907e1dcd5a181661b}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!login\+\_\+menu@{login\+\_\+menu}}
+\index{login\+\_\+menu@{login\+\_\+menu}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{login\+\_\+menu()}{login\_menu()}}
+{\footnotesize\ttfamily Logged\+In\+User$\ast$ login\+\_\+menu (\begin{DoxyParamCaption}\item[{Socket}]{socket,  }\item[{Authentication\+Server}]{auth }\end{DoxyParamCaption})}
+
+
+
+displays the menu for logging in 
+
+login\+\_\+menu   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin; primary author  socket\+: socket to communicate with user  auth\+: authentication server for authenticating user input 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{_web_server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_web_server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!main@{main}}
+\index{main@{main}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+entry point into application, running the listening server 
+
+main Creates threads to handle each client, starts sensor subsystem and listens for clients
+
+  \begin{DoxyAuthor}{Author}
+Jake Mclaughlin  client socket 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{_web_server_8cpp_a4967b385dad874e49c4ae8d71a902044}\label{_web_server_8cpp_a4967b385dad874e49c4ae8d71a902044}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!register\+\_\+menu@{register\+\_\+menu}}
+\index{register\+\_\+menu@{register\+\_\+menu}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{register\+\_\+menu()}{register\_menu()}}
+{\footnotesize\ttfamily Logged\+In\+User$\ast$ register\+\_\+menu (\begin{DoxyParamCaption}\item[{Socket}]{socket,  }\item[{Authentication\+Server}]{auth }\end{DoxyParamCaption})}
+
+
+
+displays the menu for registering a user 
+
+register\+\_\+menu   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin; primary author  socket\+: socket to communicate with user  auth\+: authentication server for authenticating user input 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{_web_server_8cpp_a1f8cf2e89747276e79b7a1221e1ffbae}\label{_web_server_8cpp_a1f8cf2e89747276e79b7a1221e1ffbae}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!sensormain@{sensormain}}
+\index{sensormain@{sensormain}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{sensormain()}{sensormain()}}
+{\footnotesize\ttfamily void$\ast$ sensormain (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption})}
+
+
+
+function to handle the sensor subsystem 
+
+sensor\+\_\+main This function instantiates the parkinglot and parkingspace objects based on the data stored in the database. After instantiation, it will periodically update the database based on the values being read form the sensor
+
+  \begin{DoxyAuthor}{Author}
+Mike Levis  nothing 
+\end{DoxyAuthor}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_web_server_8cpp_af88b94fcfed32e7cd2de2e2f755943de}\label{_web_server_8cpp_af88b94fcfed32e7cd2de2e2f755943de}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!database@{database}}
+\index{database@{database}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{database}{database}}
+{\footnotesize\ttfamily Database\+Proxy database = database.\+instance()}
+
+\mbox{\Hypertarget{_web_server_8cpp_a0abaf4b5d42c4e5d19190035fade3599}\label{_web_server_8cpp_a0abaf4b5d42c4e5d19190035fade3599}} 
+\index{Web\+Server.\+cpp@{Web\+Server.\+cpp}!lock@{lock}}
+\index{lock@{lock}!Web\+Server.\+cpp@{Web\+Server.\+cpp}}
+\subsubsection{\texorpdfstring{lock}{lock}}
+{\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t lock}
+

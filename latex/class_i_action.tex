@@ -1,0 +1,81 @@
+\hypertarget{class_i_action}{}\section{I\+Action Class Reference}
+\label{class_i_action}\index{I\+Action@{I\+Action}}
+
+
+{\ttfamily \#include $<$I\+Action.\+h$>$}
+
+Inheritance diagram for I\+Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.481482cm]{class_i_action}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_i_action_af3af290dcc0798a04628f2a35fe5e803}{get\+Name}} ()
+\item 
+void \mbox{\hyperlink{class_i_action_a4a38fa06fac69702e53abd46c2e7ae9e}{set\+Name}} (std\+::string new\+\_\+name)
+\item 
+virtual void \mbox{\hyperlink{class_i_action_abaaa72a5af9c0169cb5b793292a5d18f}{perform}} (int userid, \mbox{\hyperlink{class_socket}{Socket}} sock)=0
+\begin{DoxyCompactList}\small\item\em Perform method executes code associated to the specific action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_i_action_a384f5aba23093f729d03136abcf9d168}{name}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_action_af3af290dcc0798a04628f2a35fe5e803}\label{class_i_action_af3af290dcc0798a04628f2a35fe5e803}} 
+\index{I\+Action@{I\+Action}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!I\+Action@{I\+Action}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily std\+::string I\+Action\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_i_action_abaaa72a5af9c0169cb5b793292a5d18f}\label{class_i_action_abaaa72a5af9c0169cb5b793292a5d18f}} 
+\index{I\+Action@{I\+Action}!perform@{perform}}
+\index{perform@{perform}!I\+Action@{I\+Action}}
+\subsubsection{\texorpdfstring{perform()}{perform()}}
+{\footnotesize\ttfamily virtual void I\+Action\+::perform (\begin{DoxyParamCaption}\item[{int}]{userid,  }\item[{\mbox{\hyperlink{class_socket}{Socket}}}]{sock }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Perform method executes code associated to the specific action. 
+
+Perform   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin   
+
+Nicholas Tocco 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em userid} & id of calling user \\
+\hline
+{\em sock} & socket of calling client \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classchange_lot_address_a506b13054e3f579bbc47b04e290a4ddf}{change\+Lot\+Address}}, \mbox{\hyperlink{classchange_lot_name_a0529a32316995ee8db0dd3e8c12f3efc}{change\+Lot\+Name}}, \mbox{\hyperlink{class_reserve_aa681b8b419edc579ba2892fc43fe3585}{Reserve}}, \mbox{\hyperlink{classview_afff29fcfad8be5de1bc6522722357ffa}{view}}, \mbox{\hyperlink{classchange_rate_a47fa95a4766f6828b6485c6ff3c4b620}{change\+Rate}}, and \mbox{\hyperlink{classchange_time_ab9a68e5091a5d09cebd638c812fa5923}{change\+Time}}.
+
+\mbox{\Hypertarget{class_i_action_a4a38fa06fac69702e53abd46c2e7ae9e}\label{class_i_action_a4a38fa06fac69702e53abd46c2e7ae9e}} 
+\index{I\+Action@{I\+Action}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!I\+Action@{I\+Action}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily void I\+Action\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_i_action_a384f5aba23093f729d03136abcf9d168}\label{class_i_action_a384f5aba23093f729d03136abcf9d168}} 
+\index{I\+Action@{I\+Action}!name@{name}}
+\index{name@{name}!I\+Action@{I\+Action}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string I\+Action\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_i_action_8h}{I\+Action.\+h}}\end{DoxyCompactItemize}

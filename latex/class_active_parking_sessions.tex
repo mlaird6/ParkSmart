@@ -1,0 +1,230 @@
+\hypertarget{class_active_parking_sessions}{}\section{Active\+Parking\+Sessions Class Reference}
+\label{class_active_parking_sessions}\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+
+
+{\ttfamily \#include $<$Active\+Parking\+Sessions.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_active_parking_sessions_aa79b38fd8ad784f12c431bd095d2b627}{Active\+Parking\+Sessions}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_parking_session}{Parking\+Session}} $>$ \mbox{\hyperlink{class_active_parking_sessions_a70eefb3fa7f69bfb69daf95e2284c7dd}{get\+All\+Active\+Parking\+Sessions}} ()
+\begin{DoxyCompactList}\small\item\em retrieved all active parking sessions \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_parking_session}{Parking\+Session}} \mbox{\hyperlink{class_active_parking_sessions_a0aa9e3c0239a4f8ce36b96056f73beaa}{get\+Parking\+Session}} (int id)
+\begin{DoxyCompactList}\small\item\em retrieved a parking session \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_parking_session}{Parking\+Session}} $>$ \mbox{\hyperlink{class_active_parking_sessions_a6fd4dcdfd24dc941aff78a10f185a2ae}{get\+Parking\+Sessions}} (vector$<$ int $>$ parking\+Sessions)
+\begin{DoxyCompactList}\small\item\em retrieves specific parking sessions \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_active_parking_sessions_ab214d63838f6a97742241b5c0a9be651}{add\+Active\+Session}} (int id, \mbox{\hyperlink{class_parking_session}{Parking\+Session}} session)
+\begin{DoxyCompactList}\small\item\em add an active parking session \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_active_parking_sessions_a5fca1c37eb394caa299ca5433e648051}{remove\+Active\+Session}} (int id, \mbox{\hyperlink{class_parking_session}{Parking\+Session}} session)
+\begin{DoxyCompactList}\small\item\em remove an active parking sessions \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_active_parking_sessions_aae920aab19389cd3e772720bda66ca79}{get\+Count}} ()
+\begin{DoxyCompactList}\small\item\em retrieves total number of active parking sessions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_active_parking_sessions_a32bb2ec28e44b62ad96d9acb2295f9c3}{increase\+Count}} ()
+\begin{DoxyCompactList}\small\item\em used to increase active parking sessions count once a new active session is added \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_active_parking_sessions_a0f8c8e3d21629e9f0a325bdbb0f4ac87}{check\+Parking\+Session}} (int id)
+\begin{DoxyCompactList}\small\item\em check if an active parking session with a spot id already exist \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unordered\+\_\+map$<$ int, \mbox{\hyperlink{class_parking_session}{Parking\+Session}} $>$ \mbox{\hyperlink{class_active_parking_sessions_ac85c55c90db020157588dcc520cbfa22}{active\+Sessions}}
+\item 
+int \mbox{\hyperlink{class_active_parking_sessions_a8097a4407c5f9e02444740df84602840}{count}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_active_parking_sessions_aa79b38fd8ad784f12c431bd095d2b627}\label{class_active_parking_sessions_aa79b38fd8ad784f12c431bd095d2b627}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{Active\+Parking\+Sessions()}{ActiveParkingSessions()}}
+{\footnotesize\ttfamily Active\+Parking\+Sessions\+::\+Active\+Parking\+Sessions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_active_parking_sessions_ab214d63838f6a97742241b5c0a9be651}\label{class_active_parking_sessions_ab214d63838f6a97742241b5c0a9be651}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!add\+Active\+Session@{add\+Active\+Session}}
+\index{add\+Active\+Session@{add\+Active\+Session}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{add\+Active\+Session()}{addActiveSession()}}
+{\footnotesize\ttfamily void Active\+Parking\+Sessions\+::add\+Active\+Session (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{class_parking_session}{Parking\+Session}}}]{session }\end{DoxyParamCaption})}
+
+
+
+add an active parking session 
+
+given a session, add to active sessions using insert
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & -\/ a parking session to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_active_parking_sessions_a0f8c8e3d21629e9f0a325bdbb0f4ac87}\label{class_active_parking_sessions_a0f8c8e3d21629e9f0a325bdbb0f4ac87}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!check\+Parking\+Session@{check\+Parking\+Session}}
+\index{check\+Parking\+Session@{check\+Parking\+Session}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{check\+Parking\+Session()}{checkParkingSession()}}
+{\footnotesize\ttfamily bool Active\+Parking\+Sessions\+::check\+Parking\+Session (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+check if an active parking session with a spot id already exist 
+
+get all active sessions and itterate through them until specified id is found or you reach the end
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ the id of the parking session \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false -\/ weather the parking session with that ID was found or not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_active_parking_sessions_a70eefb3fa7f69bfb69daf95e2284c7dd}\label{class_active_parking_sessions_a70eefb3fa7f69bfb69daf95e2284c7dd}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!get\+All\+Active\+Parking\+Sessions@{get\+All\+Active\+Parking\+Sessions}}
+\index{get\+All\+Active\+Parking\+Sessions@{get\+All\+Active\+Parking\+Sessions}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{get\+All\+Active\+Parking\+Sessions()}{getAllActiveParkingSessions()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_parking_session}{Parking\+Session}} $>$ Active\+Parking\+Sessions\+::get\+All\+Active\+Parking\+Sessions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retrieved all active parking sessions 
+
+retrieved all active parking sessions by accessing all active sessions and pushing them into a vector
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sessions -\/ a vector of parking sessions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_active_parking_sessions_aae920aab19389cd3e772720bda66ca79}\label{class_active_parking_sessions_aae920aab19389cd3e772720bda66ca79}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{get\+Count()}{getCount()}}
+{\footnotesize\ttfamily int Active\+Parking\+Sessions\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retrieves total number of active parking sessions 
+
+return count, the total number of active parking sessions
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+count -\/ the number of active parking sessions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_active_parking_sessions_a0aa9e3c0239a4f8ce36b96056f73beaa}\label{class_active_parking_sessions_a0aa9e3c0239a4f8ce36b96056f73beaa}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!get\+Parking\+Session@{get\+Parking\+Session}}
+\index{get\+Parking\+Session@{get\+Parking\+Session}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{get\+Parking\+Session()}{getParkingSession()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_parking_session}{Parking\+Session}} Active\+Parking\+Sessions\+::get\+Parking\+Session (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+retrieved a parking session 
+
+get all active sessions and itterate through them until specified id is found or you reach the end return the parking session
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ the id of the parking session \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session -\/ the parking session with the specified ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_active_parking_sessions_a6fd4dcdfd24dc941aff78a10f185a2ae}\label{class_active_parking_sessions_a6fd4dcdfd24dc941aff78a10f185a2ae}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!get\+Parking\+Sessions@{get\+Parking\+Sessions}}
+\index{get\+Parking\+Sessions@{get\+Parking\+Sessions}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{get\+Parking\+Sessions()}{getParkingSessions()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_parking_session}{Parking\+Session}} $>$ Active\+Parking\+Sessions\+::get\+Parking\+Sessions (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{parking\+Sessions }\end{DoxyParamCaption})}
+
+
+
+retrieves specific parking sessions 
+
+itterate through the vector of parking sessions and push parking sessions still in use return the parking sessions
+
+
+\begin{DoxyParams}{Parameters}
+{\em parking\+Sessions} & -\/ a vector of parking sessions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+session -\/ the parking session in use 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_active_parking_sessions_a32bb2ec28e44b62ad96d9acb2295f9c3}\label{class_active_parking_sessions_a32bb2ec28e44b62ad96d9acb2295f9c3}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!increase\+Count@{increase\+Count}}
+\index{increase\+Count@{increase\+Count}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{increase\+Count()}{increaseCount()}}
+{\footnotesize\ttfamily void Active\+Parking\+Sessions\+::increase\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+used to increase active parking sessions count once a new active session is added 
+
+increment the count of parking sessions
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_active_parking_sessions_a5fca1c37eb394caa299ca5433e648051}\label{class_active_parking_sessions_a5fca1c37eb394caa299ca5433e648051}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!remove\+Active\+Session@{remove\+Active\+Session}}
+\index{remove\+Active\+Session@{remove\+Active\+Session}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{remove\+Active\+Session()}{removeActiveSession()}}
+{\footnotesize\ttfamily void Active\+Parking\+Sessions\+::remove\+Active\+Session (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{class_parking_session}{Parking\+Session}}}]{session }\end{DoxyParamCaption})}
+
+
+
+remove an active parking sessions 
+
+given a session, remove from active sessions using erase
+
+
+\begin{DoxyParams}{Parameters}
+{\em session} & -\/ a parking session to delete \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_active_parking_sessions_ac85c55c90db020157588dcc520cbfa22}\label{class_active_parking_sessions_ac85c55c90db020157588dcc520cbfa22}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!active\+Sessions@{active\+Sessions}}
+\index{active\+Sessions@{active\+Sessions}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{active\+Sessions}{activeSessions}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$int,\mbox{\hyperlink{class_parking_session}{Parking\+Session}}$>$ Active\+Parking\+Sessions\+::active\+Sessions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_active_parking_sessions_a8097a4407c5f9e02444740df84602840}\label{class_active_parking_sessions_a8097a4407c5f9e02444740df84602840}} 
+\index{Active\+Parking\+Sessions@{Active\+Parking\+Sessions}!count@{count}}
+\index{count@{count}!Active\+Parking\+Sessions@{Active\+Parking\+Sessions}}
+\subsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int Active\+Parking\+Sessions\+::count\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/models/\mbox{\hyperlink{_active_parking_sessions_8h}{Active\+Parking\+Sessions.\+h}}\item 
+src/models/\mbox{\hyperlink{_active_parking_sessions_8cpp}{Active\+Parking\+Sessions.\+cpp}}\end{DoxyCompactItemize}

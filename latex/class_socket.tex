@@ -1,0 +1,83 @@
+\hypertarget{class_socket}{}\section{Socket Class Reference}
+\label{class_socket}\index{Socket@{Socket}}
+
+
+{\ttfamily \#include $<$Socket.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_socket_afbf6825e4819e8cbcfdb3e3d083cad34}{Socket}} (int new\+\_\+socket, pthread\+\_\+t \mbox{\hyperlink{class_socket_a3f257ff5ebfc3431b8a33879a806bb06}{thread}})
+\item 
+void \mbox{\hyperlink{class_socket_a39eaf88b49360805f252506d301cf1c4}{send\+\_\+msg}} (char $\ast$message)
+\item 
+std\+::string \mbox{\hyperlink{class_socket_a93675446d84c9856a4d7493f99d1e064}{receive}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_socket_ad514f7c19bf905d2618222aafd2ad65c}{socket}}
+\item 
+char $\ast$ \mbox{\hyperlink{class_socket_a08722f899fe7248e6bd122f5c241872b}{sndbuffer}}
+\item 
+char $\ast$ \mbox{\hyperlink{class_socket_af6c5600b809c80996f76a5fb143af4e8}{rcvbuffer}}
+\item 
+pthread\+\_\+t \mbox{\hyperlink{class_socket_a3f257ff5ebfc3431b8a33879a806bb06}{thread}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_socket_afbf6825e4819e8cbcfdb3e3d083cad34}\label{class_socket_afbf6825e4819e8cbcfdb3e3d083cad34}} 
+\index{Socket@{Socket}!Socket@{Socket}}
+\index{Socket@{Socket}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{Socket()}{Socket()}}
+{\footnotesize\ttfamily Socket\+::\+Socket (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+socket,  }\item[{pthread\+\_\+t}]{thread }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_socket_a93675446d84c9856a4d7493f99d1e064}\label{class_socket_a93675446d84c9856a4d7493f99d1e064}} 
+\index{Socket@{Socket}!receive@{receive}}
+\index{receive@{receive}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily std\+::string Socket\+::receive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_socket_a39eaf88b49360805f252506d301cf1c4}\label{class_socket_a39eaf88b49360805f252506d301cf1c4}} 
+\index{Socket@{Socket}!send\+\_\+msg@{send\+\_\+msg}}
+\index{send\+\_\+msg@{send\+\_\+msg}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{send\+\_\+msg()}{send\_msg()}}
+{\footnotesize\ttfamily void Socket\+::send\+\_\+msg (\begin{DoxyParamCaption}\item[{char $\ast$}]{message }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_socket_af6c5600b809c80996f76a5fb143af4e8}\label{class_socket_af6c5600b809c80996f76a5fb143af4e8}} 
+\index{Socket@{Socket}!rcvbuffer@{rcvbuffer}}
+\index{rcvbuffer@{rcvbuffer}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{rcvbuffer}{rcvbuffer}}
+{\footnotesize\ttfamily char$\ast$ Socket\+::rcvbuffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_socket_a08722f899fe7248e6bd122f5c241872b}\label{class_socket_a08722f899fe7248e6bd122f5c241872b}} 
+\index{Socket@{Socket}!sndbuffer@{sndbuffer}}
+\index{sndbuffer@{sndbuffer}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{sndbuffer}{sndbuffer}}
+{\footnotesize\ttfamily char$\ast$ Socket\+::sndbuffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_socket_ad514f7c19bf905d2618222aafd2ad65c}\label{class_socket_ad514f7c19bf905d2618222aafd2ad65c}} 
+\index{Socket@{Socket}!socket@{socket}}
+\index{socket@{socket}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily int Socket\+::socket\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_socket_a3f257ff5ebfc3431b8a33879a806bb06}\label{class_socket_a3f257ff5ebfc3431b8a33879a806bb06}} 
+\index{Socket@{Socket}!thread@{thread}}
+\index{thread@{thread}!Socket@{Socket}}
+\subsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily pthread\+\_\+t Socket\+::thread\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/models/\mbox{\hyperlink{_socket_8hpp}{Socket.\+hpp}}\item 
+src/models/\mbox{\hyperlink{_socket_8cpp}{Socket.\+cpp}}\end{DoxyCompactItemize}

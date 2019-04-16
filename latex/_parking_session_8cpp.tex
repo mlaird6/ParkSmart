@@ -1,0 +1,39 @@
+\hypertarget{_parking_session_8cpp}{}\section{src/models/\+Parking\+Session.cpp File Reference}
+\label{_parking_session_8cpp}\index{src/models/\+Parking\+Session.\+cpp@{src/models/\+Parking\+Session.\+cpp}}
+
+
+Contains information related to an user parking session.  
+
+
+{\ttfamily \#include \char`\"{}../../include/models/\+Parking\+Session.\+h\char`\"{}}\newline
+
+
+\subsection{Detailed Description}
+Contains information related to an user parking session. 
+
+   Parking session holds information that can be useful to perform actions like checking which user is parking in which space, as well as how long they will stay there. Since parking lot rates may vary and change while an user is already parked, the initial price rate is saved in each parking session. The price rate and stay time can be later used to compute how much a user will be paying at the end of a session. The parking time limit and stay time can be used to check whether a user has gone over the time limit.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rate} & ; price charged per hour set by owner of parking lot \\
+\hline
+{\em parking\+Spot\+ID} & ; unique id used to identify a parking space \\
+\hline
+{\em parking\+Time\+Limit} & ; maximum and minimum time a user can stay in a spot \\
+\hline
+{\em stay\+Time} & ; time a user will stay in a parking space \\
+\hline
+{\em user\+ID} & ; unique id used to identify user\\
+\hline
+\end{DoxyParams}
+  \begin{DoxyAuthor}{Author}
+Melina Laird   
+
+Mike Levis   
+
+Jake Mclaughlin   
+
+Nicholas Tocco   
+
+Katherine Zambrano 
+\end{DoxyAuthor}

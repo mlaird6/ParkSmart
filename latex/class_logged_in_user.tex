@@ -1,0 +1,157 @@
+\hypertarget{class_logged_in_user}{}\section{Logged\+In\+User Class Reference}
+\label{class_logged_in_user}\index{Logged\+In\+User@{Logged\+In\+User}}
+
+
+{\ttfamily \#include $<$Logged\+In\+User.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logged_in_user_a02eaa5c2b719e289d76a63cfc8384627}{Logged\+In\+User}} (std\+::string new\+\_\+username, int new\+\_\+id, std\+::string new\+\_\+license\+\_\+num, int new\+\_\+pregnant, int new\+\_\+disability, std\+::string new\+\_\+vehicle\+\_\+type, int isdriver, int isowner)
+\begin{DoxyCompactList}\small\item\em Initializes data for a user object. \end{DoxyCompactList}\item 
+std\+::vector$<$ I\+Action $\ast$ $>$ \mbox{\hyperlink{class_logged_in_user_a54faf00007fd3669d37ed5ccfa187ce7}{get\+Actions}} ()
+\begin{DoxyCompactList}\small\item\em Iterates through users roles to get actions they can perform. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_logged_in_user_a427203000b884691867e59bef1e05efc}{get\+ID}} ()
+\begin{DoxyCompactList}\small\item\em gets user id \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_logged_in_user_a8670821dc91d709d13bde0f7449f0e73}{username}}
+\item 
+int \mbox{\hyperlink{class_logged_in_user_a4022b1beed600f13a23f0fff3511a33d}{U\+ID}}
+\item 
+std\+::string \mbox{\hyperlink{class_logged_in_user_aaf0493296f1ad85b283b7727cf3a51d9}{license\+\_\+num}}
+\item 
+bool \mbox{\hyperlink{class_logged_in_user_a5dd187f89453152de1b38bdccae85c33}{pregnant}}
+\item 
+bool \mbox{\hyperlink{class_logged_in_user_af914bf317e748613c94716abd3a34556}{disability}}
+\item 
+std\+::string \mbox{\hyperlink{class_logged_in_user_a9df701394f7b2550199eb61435b1be54}{vehicle\+\_\+type}}
+\item 
+std\+::vector$<$ I\+Role $>$ \mbox{\hyperlink{class_logged_in_user_a5ccb34fd4489acac519c8bc82a20bb5e}{roles}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_logged_in_user_a02eaa5c2b719e289d76a63cfc8384627}\label{class_logged_in_user_a02eaa5c2b719e289d76a63cfc8384627}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!Logged\+In\+User@{Logged\+In\+User}}
+\index{Logged\+In\+User@{Logged\+In\+User}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{Logged\+In\+User()}{LoggedInUser()}}
+{\footnotesize\ttfamily Logged\+In\+User\+::\+Logged\+In\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+\_\+username,  }\item[{int}]{new\+\_\+id,  }\item[{std\+::string}]{new\+\_\+license\+\_\+num,  }\item[{int}]{new\+\_\+pregnant,  }\item[{int}]{new\+\_\+disability,  }\item[{std\+::string}]{new\+\_\+vehicle\+\_\+type,  }\item[{int}]{isdriver,  }\item[{int}]{isowner }\end{DoxyParamCaption})}
+
+
+
+Initializes data for a user object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+username} & -\/ string \\
+\hline
+{\em new\+\_\+id} & -\/ int \\
+\hline
+{\em new\+\_\+license\+\_\+num} & -\/ int \\
+\hline
+{\em new\+\_\+pregnant} & -\/ int \\
+\hline
+{\em new\+\_\+disability} & -\/ int \\
+\hline
+{\em new\+\_\+vehicle\+\_\+type} & -\/ int \\
+\hline
+{\em isdriver} & -\/ int \\
+\hline
+{\em isowner} & -\/ int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_logged_in_user_a54faf00007fd3669d37ed5ccfa187ce7}\label{class_logged_in_user_a54faf00007fd3669d37ed5ccfa187ce7}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!get\+Actions@{get\+Actions}}
+\index{get\+Actions@{get\+Actions}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{get\+Actions()}{getActions()}}
+{\footnotesize\ttfamily std\+::vector$<$ I\+Action $\ast$ $>$ Logged\+In\+User\+::get\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Iterates through users roles to get actions they can perform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+actions -\/ vector of actions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_logged_in_user_a427203000b884691867e59bef1e05efc}\label{class_logged_in_user_a427203000b884691867e59bef1e05efc}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
+{\footnotesize\ttfamily int Logged\+In\+User\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets user id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user id -\/ int 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_logged_in_user_af914bf317e748613c94716abd3a34556}\label{class_logged_in_user_af914bf317e748613c94716abd3a34556}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!disability@{disability}}
+\index{disability@{disability}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{disability}{disability}}
+{\footnotesize\ttfamily bool Logged\+In\+User\+::disability\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_logged_in_user_aaf0493296f1ad85b283b7727cf3a51d9}\label{class_logged_in_user_aaf0493296f1ad85b283b7727cf3a51d9}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!license\+\_\+num@{license\+\_\+num}}
+\index{license\+\_\+num@{license\+\_\+num}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{license\+\_\+num}{license\_num}}
+{\footnotesize\ttfamily std\+::string Logged\+In\+User\+::license\+\_\+num\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_logged_in_user_a5dd187f89453152de1b38bdccae85c33}\label{class_logged_in_user_a5dd187f89453152de1b38bdccae85c33}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!pregnant@{pregnant}}
+\index{pregnant@{pregnant}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{pregnant}{pregnant}}
+{\footnotesize\ttfamily bool Logged\+In\+User\+::pregnant\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_logged_in_user_a5ccb34fd4489acac519c8bc82a20bb5e}\label{class_logged_in_user_a5ccb34fd4489acac519c8bc82a20bb5e}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!roles@{roles}}
+\index{roles@{roles}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{roles}{roles}}
+{\footnotesize\ttfamily std\+::vector$<$I\+Role$>$ Logged\+In\+User\+::roles\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_logged_in_user_a4022b1beed600f13a23f0fff3511a33d}\label{class_logged_in_user_a4022b1beed600f13a23f0fff3511a33d}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!U\+ID@{U\+ID}}
+\index{U\+ID@{U\+ID}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{U\+ID}{UID}}
+{\footnotesize\ttfamily int Logged\+In\+User\+::\+U\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_logged_in_user_a8670821dc91d709d13bde0f7449f0e73}\label{class_logged_in_user_a8670821dc91d709d13bde0f7449f0e73}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!username@{username}}
+\index{username@{username}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{username}{username}}
+{\footnotesize\ttfamily std\+::string Logged\+In\+User\+::username\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_logged_in_user_a9df701394f7b2550199eb61435b1be54}\label{class_logged_in_user_a9df701394f7b2550199eb61435b1be54}} 
+\index{Logged\+In\+User@{Logged\+In\+User}!vehicle\+\_\+type@{vehicle\+\_\+type}}
+\index{vehicle\+\_\+type@{vehicle\+\_\+type}!Logged\+In\+User@{Logged\+In\+User}}
+\subsubsection{\texorpdfstring{vehicle\+\_\+type}{vehicle\_type}}
+{\footnotesize\ttfamily std\+::string Logged\+In\+User\+::vehicle\+\_\+type\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/models/\mbox{\hyperlink{_logged_in_user_8hpp}{Logged\+In\+User.\+hpp}}\item 
+src/models/\mbox{\hyperlink{_logged_in_user_8cpp}{Logged\+In\+User.\+cpp}}\end{DoxyCompactItemize}

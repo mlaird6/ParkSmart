@@ -1,0 +1,396 @@
+\hypertarget{class_sensor}{}\section{Sensor Class Reference}
+\label{class_sensor}\index{Sensor@{Sensor}}
+
+
+{\ttfamily \#include $<$Sensor.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensor_a6d678dbc52786bdd392343e2e24b2658}{Sensor}} (int \mbox{\hyperlink{class_sensor_a65af6ba8239b1ba96ef2fcbb1931092f}{trig\+Pin}}, int \mbox{\hyperlink{class_sensor_a7095531fc5ebb17ebddd68e75d45c1fb}{echo\+Pin}}, int \mbox{\hyperlink{class_sensor_acfc8b807b75d929969a2a9ba32ec4d20}{sensor\+ID}}, double \mbox{\hyperlink{class_sensor_a3ef8fe9d533d6b9ca9cfbaba5bc072c4}{range\+Threshold}}=100, double \mbox{\hyperlink{class_sensor_a36d68507776088618b17ed25ac8d018c}{calibration\+Scaling}}=(1.\+0/56.\+0), double \mbox{\hyperlink{class_sensor_a370acf36d39381aa3052c84e2d9f8443}{calibration\+Constant}}=0)
+\item 
+void \mbox{\hyperlink{class_sensor_ad4ef1c3ac7c3ed7427d4337ab3762228}{set\+Calibration\+Constant}} (double)
+\begin{DoxyCompactList}\small\item\em set sensor calibration constant \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensor_a662c899f76590071b561eab8f151fdea}{set\+Calibration\+Scalling}} (double)
+\begin{DoxyCompactList}\small\item\em set sensor calibration scaling \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensor_a1ed79291c81c8e11cdb369fd895c42cc}{set\+Range\+Threshold}} (double)
+\begin{DoxyCompactList}\small\item\em set sensor range threshold \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sensor_a715ecf9ba535991cacc7372073ba1355}{get\+Callibration\+Constant}} () const
+\begin{DoxyCompactList}\small\item\em get sensor calibration constant \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sensor_aa3ed2c53fe69cdf256574edc0ccacdcf}{get\+Callibration\+Scalling}} () const
+\item 
+double \mbox{\hyperlink{class_sensor_a5c0b861048790221428d0af95c8bdfe4}{get\+Range\+Threshold}} () const
+\begin{DoxyCompactList}\small\item\em get sensor calibration threshold \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_sensor_a6df3b3905c4a873edb3e820339d75001}{get\+Raw\+Range}} () const
+\begin{DoxyCompactList}\small\item\em get sensor sensor raw range \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sensor_ad8fa0c6ed89be5d735ab9a876fc71932}{car\+In\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Check if there is a car in the parking spot near sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensor_a542a721041768395de2c6e9012622113}{update}} ()
+\begin{DoxyCompactList}\small\item\em brief update sensor \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sensor_ab173b3d269feeea488a823025d3f32a7}{get\+Sensor\+ID}} ()
+\begin{DoxyCompactList}\small\item\em retrieves this sensor id \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sensor_afeebb42b714028d41e68f8149c98d19b}{Sensor}} (double \mbox{\hyperlink{class_sensor_a3ef8fe9d533d6b9ca9cfbaba5bc072c4}{range\+Threshold}}=200, double \mbox{\hyperlink{class_sensor_a36d68507776088618b17ed25ac8d018c}{calibration\+Scaling}}=(1.\+0/56.\+0), double \mbox{\hyperlink{class_sensor_a370acf36d39381aa3052c84e2d9f8443}{calibration\+Constant}}=0)
+\begin{DoxyCompactList}\small\item\em Initialize sensor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_sensor_ad4ef1c3ac7c3ed7427d4337ab3762228}{set\+Calibration\+Constant}} (double)
+\item 
+void \mbox{\hyperlink{class_sensor_a662c899f76590071b561eab8f151fdea}{set\+Calibration\+Scalling}} (double)
+\item 
+void \mbox{\hyperlink{class_sensor_a1ed79291c81c8e11cdb369fd895c42cc}{set\+Range\+Threshold}} (double)
+\item 
+double \mbox{\hyperlink{class_sensor_a715ecf9ba535991cacc7372073ba1355}{get\+Callibration\+Constant}} () const
+\item 
+double \mbox{\hyperlink{class_sensor_aa3ed2c53fe69cdf256574edc0ccacdcf}{get\+Callibration\+Scalling}} () const
+\item 
+double \mbox{\hyperlink{class_sensor_a5c0b861048790221428d0af95c8bdfe4}{get\+Range\+Threshold}} () const
+\item 
+double \mbox{\hyperlink{class_sensor_a6df3b3905c4a873edb3e820339d75001}{get\+Raw\+Range}} () const
+\item 
+bool \mbox{\hyperlink{class_sensor_ad8fa0c6ed89be5d735ab9a876fc71932}{car\+In\+Range}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_sensor_a542a721041768395de2c6e9012622113}{update}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_sensor_a65af6ba8239b1ba96ef2fcbb1931092f}{trig\+Pin}}
+\item 
+int \mbox{\hyperlink{class_sensor_a7095531fc5ebb17ebddd68e75d45c1fb}{echo\+Pin}}
+\item 
+int \mbox{\hyperlink{class_sensor_acfc8b807b75d929969a2a9ba32ec4d20}{sensor\+ID}}
+\item 
+double \mbox{\hyperlink{class_sensor_a3ef8fe9d533d6b9ca9cfbaba5bc072c4}{range\+Threshold}}
+\item 
+double \mbox{\hyperlink{class_sensor_a370acf36d39381aa3052c84e2d9f8443}{calibration\+Constant}}
+\item 
+double \mbox{\hyperlink{class_sensor_a36d68507776088618b17ed25ac8d018c}{calibration\+Scaling}}
+\item 
+double \mbox{\hyperlink{class_sensor_a4b829bf5767bebb0ba4aef3b5bd14bcd}{raw\+Range}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sensor_a6d678dbc52786bdd392343e2e24b2658}\label{class_sensor_a6d678dbc52786bdd392343e2e24b2658}} 
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{Sensor()}{Sensor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sensor\+::\+Sensor (\begin{DoxyParamCaption}\item[{int}]{trig\+Pin,  }\item[{int}]{echo\+Pin,  }\item[{int}]{sensor\+ID,  }\item[{double}]{range\+Threshold = {\ttfamily 100},  }\item[{double}]{calibration\+Scaling = {\ttfamily (1.0/56.0)},  }\item[{double}]{calibration\+Constant = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sensor_afeebb42b714028d41e68f8149c98d19b}\label{class_sensor_afeebb42b714028d41e68f8149c98d19b}} 
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\index{Sensor@{Sensor}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{Sensor()}{Sensor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sensor\+::\+Sensor (\begin{DoxyParamCaption}\item[{double}]{range\+Threshold = {\ttfamily 200},  }\item[{double}]{calibration\+Scaling = {\ttfamily (1.0/56.0)},  }\item[{double}]{calibration\+Constant = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Initialize sensor. 
+
+Initialize sensor with range threshold, calibration scaling, and callibration constant
+
+
+\begin{DoxyParams}{Parameters}
+{\em range\+Threshold} & -\/ range threshold \\
+\hline
+{\em calibration\+Scaling} & -\/ calibration scaling \\
+\hline
+{\em calibration\+Constant} & -\/ calibration constant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sensor_ad8fa0c6ed89be5d735ab9a876fc71932}\label{class_sensor_ad8fa0c6ed89be5d735ab9a876fc71932}} 
+\index{Sensor@{Sensor}!car\+In\+Range@{car\+In\+Range}}
+\index{car\+In\+Range@{car\+In\+Range}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{car\+In\+Range()}{carInRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Sensor\+::car\+In\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sensor_ad8fa0c6ed89be5d735ab9a876fc71932}\label{class_sensor_ad8fa0c6ed89be5d735ab9a876fc71932}} 
+\index{Sensor@{Sensor}!car\+In\+Range@{car\+In\+Range}}
+\index{car\+In\+Range@{car\+In\+Range}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{car\+In\+Range()}{carInRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Sensor\+::car\+In\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if there is a car in the parking spot near sensor. 
+
+Check if there is a car in the parking spot near sensor using current range = R\+R$\ast$scaling+scaling
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false (whether the car is in range) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensor_a715ecf9ba535991cacc7372073ba1355}\label{class_sensor_a715ecf9ba535991cacc7372073ba1355}} 
+\index{Sensor@{Sensor}!get\+Callibration\+Constant@{get\+Callibration\+Constant}}
+\index{get\+Callibration\+Constant@{get\+Callibration\+Constant}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{get\+Callibration\+Constant()}{getCallibrationConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Sensor\+::get\+Callibration\+Constant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_sensor_a715ecf9ba535991cacc7372073ba1355}\label{class_sensor_a715ecf9ba535991cacc7372073ba1355}} 
+\index{Sensor@{Sensor}!get\+Callibration\+Constant@{get\+Callibration\+Constant}}
+\index{get\+Callibration\+Constant@{get\+Callibration\+Constant}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{get\+Callibration\+Constant()}{getCallibrationConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Sensor\+::get\+Callibration\+Constant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get sensor calibration constant 
+
+simple getter for the calibration constant
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+calibration\+Constant -\/ the calibration constant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensor_aa3ed2c53fe69cdf256574edc0ccacdcf}\label{class_sensor_aa3ed2c53fe69cdf256574edc0ccacdcf}} 
+\index{Sensor@{Sensor}!get\+Callibration\+Scalling@{get\+Callibration\+Scalling}}
+\index{get\+Callibration\+Scalling@{get\+Callibration\+Scalling}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{get\+Callibration\+Scalling()}{getCallibrationScalling()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Sensor\+::get\+Callibration\+Scalling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_sensor_aa3ed2c53fe69cdf256574edc0ccacdcf}\label{class_sensor_aa3ed2c53fe69cdf256574edc0ccacdcf}} 
+\index{Sensor@{Sensor}!get\+Callibration\+Scalling@{get\+Callibration\+Scalling}}
+\index{get\+Callibration\+Scalling@{get\+Callibration\+Scalling}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{get\+Callibration\+Scalling()}{getCallibrationScalling()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Sensor\+::get\+Callibration\+Scalling (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_sensor_a5c0b861048790221428d0af95c8bdfe4}\label{class_sensor_a5c0b861048790221428d0af95c8bdfe4}} 
+\index{Sensor@{Sensor}!get\+Range\+Threshold@{get\+Range\+Threshold}}
+\index{get\+Range\+Threshold@{get\+Range\+Threshold}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{get\+Range\+Threshold()}{getRangeThreshold()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Sensor\+::get\+Range\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_sensor_a5c0b861048790221428d0af95c8bdfe4}\label{class_sensor_a5c0b861048790221428d0af95c8bdfe4}} 
+\index{Sensor@{Sensor}!get\+Range\+Threshold@{get\+Range\+Threshold}}
+\index{get\+Range\+Threshold@{get\+Range\+Threshold}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{get\+Range\+Threshold()}{getRangeThreshold()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Sensor\+::get\+Range\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get sensor calibration threshold 
+
+simple getter for the calibration threshold
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+calibration\+Threshold -\/ the calibration threshold 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensor_a6df3b3905c4a873edb3e820339d75001}\label{class_sensor_a6df3b3905c4a873edb3e820339d75001}} 
+\index{Sensor@{Sensor}!get\+Raw\+Range@{get\+Raw\+Range}}
+\index{get\+Raw\+Range@{get\+Raw\+Range}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{get\+Raw\+Range()}{getRawRange()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Sensor\+::get\+Raw\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_sensor_a6df3b3905c4a873edb3e820339d75001}\label{class_sensor_a6df3b3905c4a873edb3e820339d75001}} 
+\index{Sensor@{Sensor}!get\+Raw\+Range@{get\+Raw\+Range}}
+\index{get\+Raw\+Range@{get\+Raw\+Range}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{get\+Raw\+Range()}{getRawRange()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Sensor\+::get\+Raw\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get sensor sensor raw range 
+
+simple getter for the raw range
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+raw\+Range -\/ raw range 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensor_ab173b3d269feeea488a823025d3f32a7}\label{class_sensor_ab173b3d269feeea488a823025d3f32a7}} 
+\index{Sensor@{Sensor}!get\+Sensor\+ID@{get\+Sensor\+ID}}
+\index{get\+Sensor\+ID@{get\+Sensor\+ID}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{get\+Sensor\+I\+D()}{getSensorID()}}
+{\footnotesize\ttfamily int Sensor\+::get\+Sensor\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retrieves this sensor id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sensor\+ID; int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensor_ad4ef1c3ac7c3ed7427d4337ab3762228}\label{class_sensor_ad4ef1c3ac7c3ed7427d4337ab3762228}} 
+\index{Sensor@{Sensor}!set\+Calibration\+Constant@{set\+Calibration\+Constant}}
+\index{set\+Calibration\+Constant@{set\+Calibration\+Constant}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{set\+Calibration\+Constant()}{setCalibrationConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sensor\+::set\+Calibration\+Constant (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sensor_ad4ef1c3ac7c3ed7427d4337ab3762228}\label{class_sensor_ad4ef1c3ac7c3ed7427d4337ab3762228}} 
+\index{Sensor@{Sensor}!set\+Calibration\+Constant@{set\+Calibration\+Constant}}
+\index{set\+Calibration\+Constant@{set\+Calibration\+Constant}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{set\+Calibration\+Constant()}{setCalibrationConstant()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sensor\+::set\+Calibration\+Constant (\begin{DoxyParamCaption}\item[{double}]{calibration\+Constant }\end{DoxyParamCaption})}
+
+
+
+set sensor calibration constant 
+
+simple setter for the calibration constant
+
+
+\begin{DoxyParams}{Parameters}
+{\em calibration\+Constant} & -\/ the calibration constant to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensor_a662c899f76590071b561eab8f151fdea}\label{class_sensor_a662c899f76590071b561eab8f151fdea}} 
+\index{Sensor@{Sensor}!set\+Calibration\+Scalling@{set\+Calibration\+Scalling}}
+\index{set\+Calibration\+Scalling@{set\+Calibration\+Scalling}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{set\+Calibration\+Scalling()}{setCalibrationScalling()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sensor\+::set\+Calibration\+Scalling (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sensor_a662c899f76590071b561eab8f151fdea}\label{class_sensor_a662c899f76590071b561eab8f151fdea}} 
+\index{Sensor@{Sensor}!set\+Calibration\+Scalling@{set\+Calibration\+Scalling}}
+\index{set\+Calibration\+Scalling@{set\+Calibration\+Scalling}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{set\+Calibration\+Scalling()}{setCalibrationScalling()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sensor\+::set\+Calibration\+Scalling (\begin{DoxyParamCaption}\item[{double}]{calibration\+Scaling }\end{DoxyParamCaption})}
+
+
+
+set sensor calibration scaling 
+
+simple setter for the calibration scaling
+
+
+\begin{DoxyParams}{Parameters}
+{\em set\+Calibration\+Scalling} & -\/ the calibration scaling to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensor_a1ed79291c81c8e11cdb369fd895c42cc}\label{class_sensor_a1ed79291c81c8e11cdb369fd895c42cc}} 
+\index{Sensor@{Sensor}!set\+Range\+Threshold@{set\+Range\+Threshold}}
+\index{set\+Range\+Threshold@{set\+Range\+Threshold}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{set\+Range\+Threshold()}{setRangeThreshold()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sensor\+::set\+Range\+Threshold (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sensor_a1ed79291c81c8e11cdb369fd895c42cc}\label{class_sensor_a1ed79291c81c8e11cdb369fd895c42cc}} 
+\index{Sensor@{Sensor}!set\+Range\+Threshold@{set\+Range\+Threshold}}
+\index{set\+Range\+Threshold@{set\+Range\+Threshold}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{set\+Range\+Threshold()}{setRangeThreshold()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sensor\+::set\+Range\+Threshold (\begin{DoxyParamCaption}\item[{double}]{range\+Threshold }\end{DoxyParamCaption})}
+
+
+
+set sensor range threshold 
+
+simple setter for the calibration threshold
+
+
+\begin{DoxyParams}{Parameters}
+{\em set\+Calibration\+Scalling} & -\/ the calibration threshold to be set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sensor_a542a721041768395de2c6e9012622113}\label{class_sensor_a542a721041768395de2c6e9012622113}} 
+\index{Sensor@{Sensor}!update@{update}}
+\index{update@{update}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Sensor\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_a542a721041768395de2c6e9012622113}\label{class_sensor_a542a721041768395de2c6e9012622113}} 
+\index{Sensor@{Sensor}!update@{update}}
+\index{update@{update}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{update()}{update()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Sensor\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+brief update sensor 
+
+send and recieve pulse to update
+
+
+\begin{DoxyParams}{Parameters}
+{\em N/A} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N/A 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sensor_a370acf36d39381aa3052c84e2d9f8443}\label{class_sensor_a370acf36d39381aa3052c84e2d9f8443}} 
+\index{Sensor@{Sensor}!calibration\+Constant@{calibration\+Constant}}
+\index{calibration\+Constant@{calibration\+Constant}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{calibration\+Constant}{calibrationConstant}}
+{\footnotesize\ttfamily double Sensor\+::calibration\+Constant\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_a36d68507776088618b17ed25ac8d018c}\label{class_sensor_a36d68507776088618b17ed25ac8d018c}} 
+\index{Sensor@{Sensor}!calibration\+Scaling@{calibration\+Scaling}}
+\index{calibration\+Scaling@{calibration\+Scaling}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{calibration\+Scaling}{calibrationScaling}}
+{\footnotesize\ttfamily double Sensor\+::calibration\+Scaling\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_a7095531fc5ebb17ebddd68e75d45c1fb}\label{class_sensor_a7095531fc5ebb17ebddd68e75d45c1fb}} 
+\index{Sensor@{Sensor}!echo\+Pin@{echo\+Pin}}
+\index{echo\+Pin@{echo\+Pin}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{echo\+Pin}{echoPin}}
+{\footnotesize\ttfamily int Sensor\+::echo\+Pin\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_a3ef8fe9d533d6b9ca9cfbaba5bc072c4}\label{class_sensor_a3ef8fe9d533d6b9ca9cfbaba5bc072c4}} 
+\index{Sensor@{Sensor}!range\+Threshold@{range\+Threshold}}
+\index{range\+Threshold@{range\+Threshold}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{range\+Threshold}{rangeThreshold}}
+{\footnotesize\ttfamily double Sensor\+::range\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_a4b829bf5767bebb0ba4aef3b5bd14bcd}\label{class_sensor_a4b829bf5767bebb0ba4aef3b5bd14bcd}} 
+\index{Sensor@{Sensor}!raw\+Range@{raw\+Range}}
+\index{raw\+Range@{raw\+Range}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{raw\+Range}{rawRange}}
+{\footnotesize\ttfamily double Sensor\+::raw\+Range\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_acfc8b807b75d929969a2a9ba32ec4d20}\label{class_sensor_acfc8b807b75d929969a2a9ba32ec4d20}} 
+\index{Sensor@{Sensor}!sensor\+ID@{sensor\+ID}}
+\index{sensor\+ID@{sensor\+ID}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{sensor\+ID}{sensorID}}
+{\footnotesize\ttfamily int Sensor\+::sensor\+ID\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_a65af6ba8239b1ba96ef2fcbb1931092f}\label{class_sensor_a65af6ba8239b1ba96ef2fcbb1931092f}} 
+\index{Sensor@{Sensor}!trig\+Pin@{trig\+Pin}}
+\index{trig\+Pin@{trig\+Pin}!Sensor@{Sensor}}
+\subsubsection{\texorpdfstring{trig\+Pin}{trigPin}}
+{\footnotesize\ttfamily int Sensor\+::trig\+Pin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Hardware/\+Arduino/\mbox{\hyperlink{_hardware_2_arduino_2_sensor_8h}{Sensor.\+h}}\item 
+Hardware/\+Arduino/\mbox{\hyperlink{_hardware_2_arduino_2_sensor_8cpp}{Sensor.\+cpp}}\end{DoxyCompactItemize}

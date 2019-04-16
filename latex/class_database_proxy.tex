@@ -1,0 +1,405 @@
+\hypertarget{class_database_proxy}{}\section{Database\+Proxy Class Reference}
+\label{class_database_proxy}\index{Database\+Proxy@{Database\+Proxy}}
+
+
+{\ttfamily \#include $<$Database\+Proxy.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_database_proxy_abe0e5778383920086854c194b3802f61}{create\+User}} (string, string, string, string, string, int, int, string, int, int)
+\begin{DoxyCompactList}\small\item\em access database to create user \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_database_proxy_a66ecbbd816b9528c9c537ef29a9c976e}{get\+User}} (string username, string password)
+\begin{DoxyCompactList}\small\item\em access database to get user \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_database_proxy_a5258d465ec8d2a9e47457644fb6fc27a}{get\+Parking\+Lot}} (int)
+\begin{DoxyCompactList}\small\item\em access database to get parkinglot \end{DoxyCompactList}\item 
+vector$<$ vector$<$ string $>$ $>$ \mbox{\hyperlink{class_database_proxy_a81b6e2c6ac50dfbc271a837881fdd869}{get\+Parking\+Lots}} ()
+\begin{DoxyCompactList}\small\item\em access database to get all lots with I\+Ds \end{DoxyCompactList}\item 
+vector$<$ vector$<$ string $>$ $>$ \mbox{\hyperlink{class_database_proxy_a89c65c6817719c84dff2a2f480b0b9cc}{get\+Parking\+Spaces}} (int)
+\begin{DoxyCompactList}\small\item\em access database to get parking space \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_database_proxy_ae62e46fed10eecba9b13afd65874d750}{get\+Space}} (int, int)
+\begin{DoxyCompactList}\small\item\em access database to access parking space \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_proxy_aa5efa63f0579939edbd042d194d9f150}{set\+Space\+Occupied}} (int, int)
+\begin{DoxyCompactList}\small\item\em access database to set a parking space as occupied \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_proxy_ade2171b0f8da996d516a212692913d59}{set\+Space\+Reserved}} (int, int)
+\begin{DoxyCompactList}\small\item\em access database to set a parking space as reserved \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_proxy_a2a2e27f67ff82519fd49c503490083b7}{set\+Lot\+Time}} (int, string, string)
+\begin{DoxyCompactList}\small\item\em access database to set parking lot opening and closing times \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_proxy_a68aa4847e1dc937349200241722d411c}{set\+Lot\+Rate}} (int, int)
+\begin{DoxyCompactList}\small\item\em access database to set parking lot rate \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_proxy_a963f6ca045641c4f04b9c22b80134e1c}{set\+Lot\+Name}} (int, string)
+\begin{DoxyCompactList}\small\item\em access database to set parking lot name \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_database_proxy_aaf1a1456f4df83fdd72b8b6578e2efa2}{set\+Lot\+Address}} (int, string)
+\begin{DoxyCompactList}\small\item\em access database to set parking lot address \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_database_proxy}{Database\+Proxy}} \& \mbox{\hyperlink{class_database_proxy_ae1502f646375bb6519c715dbe5535a43}{instance}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_database_proxy_ab56f53bf7448f765605c548a60a7cb69}{Database\+Proxy}} ()
+\begin{DoxyCompactList}\small\item\em connect to mysql database \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sql\+::\+Driver $\ast$ \mbox{\hyperlink{class_database_proxy_ac939a4eb877368773792ef0f79538faf}{driver}}
+\item 
+sql\+::\+Connection $\ast$ \mbox{\hyperlink{class_database_proxy_acb075c3ad08b6da866b931c39c8e8285}{con}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_database_proxy_ab56f53bf7448f765605c548a60a7cb69}\label{class_database_proxy_ab56f53bf7448f765605c548a60a7cb69}} 
+\index{Database\+Proxy@{Database\+Proxy}!Database\+Proxy@{Database\+Proxy}}
+\index{Database\+Proxy@{Database\+Proxy}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{Database\+Proxy()}{DatabaseProxy()}}
+{\footnotesize\ttfamily Database\+Proxy\+::\+Database\+Proxy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+connect to mysql database 
+
+use the IP, port, username and password to connect to mysql connect to Park\+Smart database
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000009}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_proxy_abe0e5778383920086854c194b3802f61}\label{class_database_proxy_abe0e5778383920086854c194b3802f61}} 
+\index{Database\+Proxy@{Database\+Proxy}!create\+User@{create\+User}}
+\index{create\+User@{create\+User}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{create\+User()}{createUser()}}
+{\footnotesize\ttfamily int Database\+Proxy\+::create\+User (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{fname,  }\item[{string}]{lname,  }\item[{string}]{license\+\_\+num,  }\item[{int}]{pregnant,  }\item[{int}]{disability,  }\item[{string}]{vehicle\+\_\+type,  }\item[{int}]{driver,  }\item[{int}]{lot\+\_\+owner }\end{DoxyParamCaption})}
+
+
+
+access database to create user 
+
+using username, password, firstname, lastname, licence place number, pregnancy status, disability status, vehicle type, driver status, and owner status run a select query to see if someone with that username already exists user\+ID is set to auto increment if user doesnt exist, run a query to insert these values into the user table
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000010}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em username} & is the chosen username for the user being added \\
+\hline
+{\em password} & is the chosen password for the user being added \\
+\hline
+{\em fname} & is the chosen first name for the user being added \\
+\hline
+{\em lname} & is the chosen last name for the user being added \\
+\hline
+{\em license\+\_\+num} & is the chosen license plate number for the user \\
+\hline
+{\em pregnant} & is the pregnancy status of the user being added \\
+\hline
+{\em disability} & is the disability status of the user being added \\
+\hline
+{\em vehichle\+\_\+type} & is the type of vehicle of the user being added \\
+\hline
+{\em driver} & is the driver status of the user being added \\
+\hline
+{\em lot\+\_\+owner} & is the lot owner status of the user being added ie weather or not they own a lot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 for failure or the database return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_a5258d465ec8d2a9e47457644fb6fc27a}\label{class_database_proxy_a5258d465ec8d2a9e47457644fb6fc27a}} 
+\index{Database\+Proxy@{Database\+Proxy}!get\+Parking\+Lot@{get\+Parking\+Lot}}
+\index{get\+Parking\+Lot@{get\+Parking\+Lot}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Parking\+Lot()}{getParkingLot()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Database\+Proxy\+::get\+Parking\+Lot (\begin{DoxyParamCaption}\item[{int}]{lotid }\end{DoxyParamCaption})}
+
+
+
+access database to get parkinglot 
+
+use lot\+ID to perform a select query that returns the lot with the specified ID add all information from the database to a vector of strings
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000012}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em lot\+ID} & -\/ the lot\+ID of the lot to return, the primary key of Parking\+Lot table \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_a81b6e2c6ac50dfbc271a837881fdd869}\label{class_database_proxy_a81b6e2c6ac50dfbc271a837881fdd869}} 
+\index{Database\+Proxy@{Database\+Proxy}!get\+Parking\+Lots@{get\+Parking\+Lots}}
+\index{get\+Parking\+Lots@{get\+Parking\+Lots}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Parking\+Lots()}{getParkingLots()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ string $>$ $>$ Database\+Proxy\+::get\+Parking\+Lots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+access database to get all lots with I\+Ds 
+
+run S\+E\+L\+E\+CT query to return all lots from the database, showing the lot ID and the lot name put id and lot name into a vector of vectors of strings
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000013}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em no} & paramerts for \mbox{\hyperlink{class_database_proxy_a81b6e2c6ac50dfbc271a837881fdd869}{get\+Parking\+Lots()}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data , a vector of vectors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_a89c65c6817719c84dff2a2f480b0b9cc}\label{class_database_proxy_a89c65c6817719c84dff2a2f480b0b9cc}} 
+\index{Database\+Proxy@{Database\+Proxy}!get\+Parking\+Spaces@{get\+Parking\+Spaces}}
+\index{get\+Parking\+Spaces@{get\+Parking\+Spaces}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Parking\+Spaces()}{getParkingSpaces()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ string $>$ $>$ Database\+Proxy\+::get\+Parking\+Spaces (\begin{DoxyParamCaption}\item[{int}]{lotid }\end{DoxyParamCaption})}
+
+
+
+access database to get parking space 
+
+run S\+E\+L\+E\+CT query to return all spaces from the lot with the specified ID put id, parking space type, space occupancy, and spot reservation status into a vector of vectors of strings return this vector of vector of strings containing all spaces and data
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000014}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em lotid} & -\/ the id of the lot containing parking spaces (primary key for database) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data , a vector of vectors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_ae62e46fed10eecba9b13afd65874d750}\label{class_database_proxy_ae62e46fed10eecba9b13afd65874d750}} 
+\index{Database\+Proxy@{Database\+Proxy}!get\+Space@{get\+Space}}
+\index{get\+Space@{get\+Space}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{get\+Space()}{getSpace()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Database\+Proxy\+::get\+Space (\begin{DoxyParamCaption}\item[{int}]{lotid,  }\item[{int}]{spotid }\end{DoxyParamCaption})}
+
+
+
+access database to access parking space 
+
+run S\+E\+L\+E\+CT query access results from parking\+Space table, returning the parking space specified by the space\+ID and the parkinglot matches the parkinglot ID\textquotesingle{} push the occupied and reserved status into a vector to return
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000021}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em lotid} & -\/ the id of the lot (primary key for database) \\
+\hline
+{\em spotid} & -\/ the id of the parking spot of the specified lot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+meta -\/ a vector that holds the parking space information 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_a66ecbbd816b9528c9c537ef29a9c976e}\label{class_database_proxy_a66ecbbd816b9528c9c537ef29a9c976e}} 
+\index{Database\+Proxy@{Database\+Proxy}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{get\+User()}{getUser()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Database\+Proxy\+::get\+User (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+access database to get user 
+
+using username and password to run a select query to see the person exists and the username and password is correct add all information from the database to a vector of strings
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000011}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em username} & is the chosen username for the user being added \\
+\hline
+{\em password} & is the chosen password for the user being added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+user vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_ae1502f646375bb6519c715dbe5535a43}\label{class_database_proxy_ae1502f646375bb6519c715dbe5535a43}} 
+\index{Database\+Proxy@{Database\+Proxy}!instance@{instance}}
+\index{instance@{instance}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_database_proxy}{Database\+Proxy}} \& Database\+Proxy\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_database_proxy_aaf1a1456f4df83fdd72b8b6578e2efa2}\label{class_database_proxy_aaf1a1456f4df83fdd72b8b6578e2efa2}} 
+\index{Database\+Proxy@{Database\+Proxy}!set\+Lot\+Address@{set\+Lot\+Address}}
+\index{set\+Lot\+Address@{set\+Lot\+Address}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{set\+Lot\+Address()}{setLotAddress()}}
+{\footnotesize\ttfamily void Database\+Proxy\+::set\+Lot\+Address (\begin{DoxyParamCaption}\item[{int}]{lotid,  }\item[{string}]{addy }\end{DoxyParamCaption})}
+
+
+
+access database to set parking lot address 
+
+run U\+P\+D\+A\+TE query update parkinglot table, updating address of the specified parking lot using the primary key, lotid
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000020}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em lotid} & -\/ the id of the lot (primary key for database) \\
+\hline
+{\em addy} & -\/ the address for the parking lot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_a963f6ca045641c4f04b9c22b80134e1c}\label{class_database_proxy_a963f6ca045641c4f04b9c22b80134e1c}} 
+\index{Database\+Proxy@{Database\+Proxy}!set\+Lot\+Name@{set\+Lot\+Name}}
+\index{set\+Lot\+Name@{set\+Lot\+Name}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{set\+Lot\+Name()}{setLotName()}}
+{\footnotesize\ttfamily void Database\+Proxy\+::set\+Lot\+Name (\begin{DoxyParamCaption}\item[{int}]{lotid,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+access database to set parking lot name 
+
+run U\+P\+D\+A\+TE query update parkinglot table, updating name of the specified parking lot using the primary key, lotid
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000019}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em lotid} & -\/ the id of the lot (primary key for database) \\
+\hline
+{\em name} & -\/ the new name for the parking lot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_a68aa4847e1dc937349200241722d411c}\label{class_database_proxy_a68aa4847e1dc937349200241722d411c}} 
+\index{Database\+Proxy@{Database\+Proxy}!set\+Lot\+Rate@{set\+Lot\+Rate}}
+\index{set\+Lot\+Rate@{set\+Lot\+Rate}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{set\+Lot\+Rate()}{setLotRate()}}
+{\footnotesize\ttfamily void Database\+Proxy\+::set\+Lot\+Rate (\begin{DoxyParamCaption}\item[{int}]{lotid,  }\item[{int}]{rate }\end{DoxyParamCaption})}
+
+
+
+access database to set parking lot rate 
+
+run U\+P\+D\+A\+TE query update parkinglot table, updating open and close time of the specified parking lot using the primary key, lotid
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000018}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em lotid} & -\/ the id of the lot (primary key for database) \\
+\hline
+{\em rate} & -\/ the new rate for the parking lot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_a2a2e27f67ff82519fd49c503490083b7}\label{class_database_proxy_a2a2e27f67ff82519fd49c503490083b7}} 
+\index{Database\+Proxy@{Database\+Proxy}!set\+Lot\+Time@{set\+Lot\+Time}}
+\index{set\+Lot\+Time@{set\+Lot\+Time}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{set\+Lot\+Time()}{setLotTime()}}
+{\footnotesize\ttfamily void Database\+Proxy\+::set\+Lot\+Time (\begin{DoxyParamCaption}\item[{int}]{lotid,  }\item[{string}]{opentime,  }\item[{string}]{closetime }\end{DoxyParamCaption})}
+
+
+
+access database to set parking lot opening and closing times 
+
+run U\+P\+D\+A\+TE query update parkinglot table, updating open and close time of the specified parking space using the primary key, lotid
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000017}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em lotid} & -\/ the id of the lot to change the time (primary key for database) \\
+\hline
+{\em opentime} & -\/ opening time for parking lot \\
+\hline
+{\em closetime} & -\/ closing time for parking lot \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_aa5efa63f0579939edbd042d194d9f150}\label{class_database_proxy_aa5efa63f0579939edbd042d194d9f150}} 
+\index{Database\+Proxy@{Database\+Proxy}!set\+Space\+Occupied@{set\+Space\+Occupied}}
+\index{set\+Space\+Occupied@{set\+Space\+Occupied}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{set\+Space\+Occupied()}{setSpaceOccupied()}}
+{\footnotesize\ttfamily void Database\+Proxy\+::set\+Space\+Occupied (\begin{DoxyParamCaption}\item[{int}]{spaceid,  }\item[{int}]{occupied }\end{DoxyParamCaption})}
+
+
+
+access database to set a parking space as occupied 
+
+run U\+P\+D\+A\+TE query update parkingspace table, updating the occupancy status of the specified parking space
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000015}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em spaceid} & -\/ the id of the space to be set occupied/not (primary key for database) \\
+\hline
+{\em occupied} & -\/ boolean where 1 = occupied, 0 = unoccupied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+data , a vector of vectors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_proxy_ade2171b0f8da996d516a212692913d59}\label{class_database_proxy_ade2171b0f8da996d516a212692913d59}} 
+\index{Database\+Proxy@{Database\+Proxy}!set\+Space\+Reserved@{set\+Space\+Reserved}}
+\index{set\+Space\+Reserved@{set\+Space\+Reserved}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{set\+Space\+Reserved()}{setSpaceReserved()}}
+{\footnotesize\ttfamily void Database\+Proxy\+::set\+Space\+Reserved (\begin{DoxyParamCaption}\item[{int}]{spaceid,  }\item[{int}]{reserved }\end{DoxyParamCaption})}
+
+
+
+access database to set a parking space as reserved 
+
+run U\+P\+D\+A\+TE query update parkingspace table, updating the reserved status of the specified parking space
+
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000016}{Bug}}]No know bugs. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em spaceid} & -\/ the id of the space to be set occupied/not (primary key for database) \\
+\hline
+{\em reserved} & -\/ boolean where 1 = reserved, 0 = not reserved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return value 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_database_proxy_acb075c3ad08b6da866b931c39c8e8285}\label{class_database_proxy_acb075c3ad08b6da866b931c39c8e8285}} 
+\index{Database\+Proxy@{Database\+Proxy}!con@{con}}
+\index{con@{con}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{con}{con}}
+{\footnotesize\ttfamily sql\+::\+Connection$\ast$ Database\+Proxy\+::con\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_database_proxy_ac939a4eb877368773792ef0f79538faf}\label{class_database_proxy_ac939a4eb877368773792ef0f79538faf}} 
+\index{Database\+Proxy@{Database\+Proxy}!driver@{driver}}
+\index{driver@{driver}!Database\+Proxy@{Database\+Proxy}}
+\subsubsection{\texorpdfstring{driver}{driver}}
+{\footnotesize\ttfamily sql\+::\+Driver$\ast$ Database\+Proxy\+::driver\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_database_proxy_8hpp}{Database\+Proxy.\+hpp}}\item 
+src/\mbox{\hyperlink{_database_proxy_8cpp}{Database\+Proxy.\+cpp}}\end{DoxyCompactItemize}

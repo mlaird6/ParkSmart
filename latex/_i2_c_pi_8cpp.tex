@@ -1,0 +1,31 @@
+\hypertarget{_i2_c_pi_8cpp}{}\section{Hardware/\+I2\+C\+Pi.cpp File Reference}
+\label{_i2_c_pi_8cpp}\index{Hardware/\+I2\+C\+Pi.\+cpp@{Hardware/\+I2\+C\+Pi.\+cpp}}
+
+
+Class handles Pi specific I2C communication.  
+
+
+{\ttfamily \#include \char`\"{}I2\+C\+Pi.\+h\char`\"{}}\newline
+
+
+\subsection{Detailed Description}
+Class handles Pi specific I2C communication. 
+
+    \+The hatdware specific implementation of I2C communication on the raspverry pi, with the pi as the master in a master-\/slave configuration. A static variable is used to lock the I2C lines from other programs using this class.
+
+  
+\begin{DoxyParams}{Parameters}
+{\em in\+Use} & ; static boolean variable to prevent programs from using the I2C lines at the same time as another\\
+\hline
+\end{DoxyParams}
+  \begin{DoxyAuthor}{Author}
+Melina Laird   
+
+Mike Levis; primary author   
+
+Jake Mclaughlin   
+
+Nicholas Tocco   
+
+Katherine Zambrano 
+\end{DoxyAuthor}

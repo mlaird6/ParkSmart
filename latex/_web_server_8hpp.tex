@@ -1,0 +1,130 @@
+\hypertarget{_web_server_8hpp}{}\section{include/servers/\+Web\+Server.hpp File Reference}
+\label{_web_server_8hpp}\index{include/servers/\+Web\+Server.\+hpp@{include/servers/\+Web\+Server.\+hpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$ifaddrs.\+h$>$}\newline
+{\ttfamily \#include $<$netinet/in.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$arpa/inet.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../models/\+Logged\+In\+User.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Threads.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../servers/\+Authentication\+Server.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../models/\+Socket.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Database\+Proxy.\+hpp\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_web_server_8hpp_a47a4d3bbd05894abbce0ffd1d266aa88}{P\+O\+R\+T\+\_\+\+NO}}~7999
+\item 
+\#define \mbox{\hyperlink{_web_server_8hpp_a46130dc86f2322714bba26960b64e7bb}{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}}~2048
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{_web_server_8hpp_a9577d2599b18e4680156b949c3683bcc}{handle\+\_\+client}} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em function for handling individual clients \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}} $\ast$ \mbox{\hyperlink{_web_server_8hpp_a4967b385dad874e49c4ae8d71a902044}{register\+\_\+menu}} (\mbox{\hyperlink{class_socket}{Socket}} socket, \mbox{\hyperlink{class_authentication_server}{Authentication\+Server}} auth)
+\begin{DoxyCompactList}\small\item\em displays the menu for registering a user \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}} $\ast$ \mbox{\hyperlink{_web_server_8hpp_a0d484100c57a643907e1dcd5a181661b}{login\+\_\+menu}} (\mbox{\hyperlink{class_socket}{Socket}} socket, \mbox{\hyperlink{class_authentication_server}{Authentication\+Server}} auth)
+\begin{DoxyCompactList}\small\item\em displays the menu for logging in \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}} $\ast$ \mbox{\hyperlink{_web_server_8hpp_a14895e1f3a2641a1d2908b5153b8c6a4}{create\+\_\+user}} (std\+::string username, std\+::string password, std\+::string fname, std\+::string lname, std\+::string license\+\_\+num, int pregnant, int disability, std\+::string vehicle\+\_\+type, int driver, int lot\+\_\+owner)
+\item 
+\mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}} $\ast$ \mbox{\hyperlink{_web_server_8hpp_a6eb114f1d9db960a9a0729f7d53abc02}{login}} (std\+::string username, std\+::string password)
+\item 
+void \mbox{\hyperlink{_web_server_8hpp_a5e7e85b95917d2269ba35e9948f2d791}{user\+\_\+menu}} (\mbox{\hyperlink{class_socket}{Socket}} socket, \mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}} $\ast$user)
+\item 
+std\+::string \mbox{\hyperlink{_web_server_8hpp_aeb5c18293d15aad88330d73e60d38faf}{get\+I\+P\+Address}} ()
+\begin{DoxyCompactList}\small\item\em gets the ip address of the machine \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_web_server_8hpp_a46130dc86f2322714bba26960b64e7bb}\label{_web_server_8hpp_a46130dc86f2322714bba26960b64e7bb}} 
+\index{Web\+Server.\+hpp@{Web\+Server.\+hpp}!B\+U\+F\+F\+E\+R\+\_\+\+L\+EN@{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}}
+\index{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN@{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}!Web\+Server.\+hpp@{Web\+Server.\+hpp}}
+\subsubsection{\texorpdfstring{B\+U\+F\+F\+E\+R\+\_\+\+L\+EN}{BUFFER\_LEN}}
+{\footnotesize\ttfamily \#define B\+U\+F\+F\+E\+R\+\_\+\+L\+EN~2048}
+
+\mbox{\Hypertarget{_web_server_8hpp_a47a4d3bbd05894abbce0ffd1d266aa88}\label{_web_server_8hpp_a47a4d3bbd05894abbce0ffd1d266aa88}} 
+\index{Web\+Server.\+hpp@{Web\+Server.\+hpp}!P\+O\+R\+T\+\_\+\+NO@{P\+O\+R\+T\+\_\+\+NO}}
+\index{P\+O\+R\+T\+\_\+\+NO@{P\+O\+R\+T\+\_\+\+NO}!Web\+Server.\+hpp@{Web\+Server.\+hpp}}
+\subsubsection{\texorpdfstring{P\+O\+R\+T\+\_\+\+NO}{PORT\_NO}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+NO~7999}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_web_server_8hpp_a14895e1f3a2641a1d2908b5153b8c6a4}\label{_web_server_8hpp_a14895e1f3a2641a1d2908b5153b8c6a4}} 
+\index{Web\+Server.\+hpp@{Web\+Server.\+hpp}!create\+\_\+user@{create\+\_\+user}}
+\index{create\+\_\+user@{create\+\_\+user}!Web\+Server.\+hpp@{Web\+Server.\+hpp}}
+\subsubsection{\texorpdfstring{create\+\_\+user()}{create\_user()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}}$\ast$ create\+\_\+user (\begin{DoxyParamCaption}\item[{std\+::string}]{username,  }\item[{std\+::string}]{password,  }\item[{std\+::string}]{fname,  }\item[{std\+::string}]{lname,  }\item[{std\+::string}]{license\+\_\+num,  }\item[{int}]{pregnant,  }\item[{int}]{disability,  }\item[{std\+::string}]{vehicle\+\_\+type,  }\item[{int}]{driver,  }\item[{int}]{lot\+\_\+owner }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_server_8hpp_aeb5c18293d15aad88330d73e60d38faf}\label{_web_server_8hpp_aeb5c18293d15aad88330d73e60d38faf}} 
+\index{Web\+Server.\+hpp@{Web\+Server.\+hpp}!get\+I\+P\+Address@{get\+I\+P\+Address}}
+\index{get\+I\+P\+Address@{get\+I\+P\+Address}!Web\+Server.\+hpp@{Web\+Server.\+hpp}}
+\subsubsection{\texorpdfstring{get\+I\+P\+Address()}{getIPAddress()}}
+{\footnotesize\ttfamily std\+::string get\+I\+P\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+gets the ip address of the machine 
+
+get\+I\+Paddress()   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin; primary author  username\+: string  password\+: string 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_web_server_8hpp_a9577d2599b18e4680156b949c3683bcc}\label{_web_server_8hpp_a9577d2599b18e4680156b949c3683bcc}} 
+\index{Web\+Server.\+hpp@{Web\+Server.\+hpp}!handle\+\_\+client@{handle\+\_\+client}}
+\index{handle\+\_\+client@{handle\+\_\+client}!Web\+Server.\+hpp@{Web\+Server.\+hpp}}
+\subsubsection{\texorpdfstring{handle\+\_\+client()}{handle\_client()}}
+{\footnotesize\ttfamily void$\ast$ handle\+\_\+client (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption})}
+
+
+
+function for handling individual clients 
+
+handle\+\_\+client.\+cpp   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin  client socket 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{_web_server_8hpp_a6eb114f1d9db960a9a0729f7d53abc02}\label{_web_server_8hpp_a6eb114f1d9db960a9a0729f7d53abc02}} 
+\index{Web\+Server.\+hpp@{Web\+Server.\+hpp}!login@{login}}
+\index{login@{login}!Web\+Server.\+hpp@{Web\+Server.\+hpp}}
+\subsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}}$\ast$ login (\begin{DoxyParamCaption}\item[{std\+::string}]{username,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_web_server_8hpp_a0d484100c57a643907e1dcd5a181661b}\label{_web_server_8hpp_a0d484100c57a643907e1dcd5a181661b}} 
+\index{Web\+Server.\+hpp@{Web\+Server.\+hpp}!login\+\_\+menu@{login\+\_\+menu}}
+\index{login\+\_\+menu@{login\+\_\+menu}!Web\+Server.\+hpp@{Web\+Server.\+hpp}}
+\subsubsection{\texorpdfstring{login\+\_\+menu()}{login\_menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}}$\ast$ login\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_socket}{Socket}}}]{socket,  }\item[{\mbox{\hyperlink{class_authentication_server}{Authentication\+Server}}}]{auth }\end{DoxyParamCaption})}
+
+
+
+displays the menu for logging in 
+
+login\+\_\+menu   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin; primary author  socket\+: socket to communicate with user  auth\+: authentication server for authenticating user input 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{_web_server_8hpp_a4967b385dad874e49c4ae8d71a902044}\label{_web_server_8hpp_a4967b385dad874e49c4ae8d71a902044}} 
+\index{Web\+Server.\+hpp@{Web\+Server.\+hpp}!register\+\_\+menu@{register\+\_\+menu}}
+\index{register\+\_\+menu@{register\+\_\+menu}!Web\+Server.\+hpp@{Web\+Server.\+hpp}}
+\subsubsection{\texorpdfstring{register\+\_\+menu()}{register\_menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}}$\ast$ register\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_socket}{Socket}}}]{socket,  }\item[{\mbox{\hyperlink{class_authentication_server}{Authentication\+Server}}}]{auth }\end{DoxyParamCaption})}
+
+
+
+displays the menu for registering a user 
+
+register\+\_\+menu   \begin{DoxyAuthor}{Author}
+Jake Mclaughlin; primary author  socket\+: socket to communicate with user  auth\+: authentication server for authenticating user input 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{_web_server_8hpp_a5e7e85b95917d2269ba35e9948f2d791}\label{_web_server_8hpp_a5e7e85b95917d2269ba35e9948f2d791}} 
+\index{Web\+Server.\+hpp@{Web\+Server.\+hpp}!user\+\_\+menu@{user\+\_\+menu}}
+\index{user\+\_\+menu@{user\+\_\+menu}!Web\+Server.\+hpp@{Web\+Server.\+hpp}}
+\subsubsection{\texorpdfstring{user\+\_\+menu()}{user\_menu()}}
+{\footnotesize\ttfamily void user\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_socket}{Socket}}}]{socket,  }\item[{\mbox{\hyperlink{class_logged_in_user}{Logged\+In\+User}} $\ast$}]{user }\end{DoxyParamCaption})}
+

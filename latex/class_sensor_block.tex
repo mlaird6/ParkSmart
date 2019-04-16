@@ -1,0 +1,83 @@
+\hypertarget{class_sensor_block}{}\section{Sensor\+Block Class Reference}
+\label{class_sensor_block}\index{Sensor\+Block@{Sensor\+Block}}
+
+
+{\ttfamily \#include $<$Sensor\+Block.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sensor_block_a858a87b528e1fd2ce09368446ac83d4a}{Sensor\+Block}} (int \mbox{\hyperlink{class_sensor_block_a323076089f7227ca2d5a50be10538f1b}{number\+Of\+Sensors}}, int \mbox{\hyperlink{class_sensor_block_aba53bd5cc52d416a9fed2b8ca57647ba}{block\+Address}})
+\item 
+void \mbox{\hyperlink{class_sensor_block_a8210999358ea8db5961b9c9c56128a8b}{update}} ()
+\item 
+\mbox{\hyperlink{class_sensor_packet}{Sensor\+Packet}} \mbox{\hyperlink{class_sensor_block_a139f31b82ef60a0dc64cfdd2208c565f}{get\+Packet}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_sensor_block_a323076089f7227ca2d5a50be10538f1b}{number\+Of\+Sensors}}
+\item 
+int \mbox{\hyperlink{class_sensor_block_aba53bd5cc52d416a9fed2b8ca57647ba}{block\+Address}}
+\item 
+\mbox{\hyperlink{class_sensor_packet}{Sensor\+Packet}} $\ast$ \mbox{\hyperlink{class_sensor_block_a7400a743ef512ca008cd1cebc9a3856e}{packet}}
+\item 
+\mbox{\hyperlink{class_i2_c_pi}{I2\+C\+Pi}} \mbox{\hyperlink{class_sensor_block_ae7627da0b0154d28327756ffa0883281}{i2C}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sensor_block_a858a87b528e1fd2ce09368446ac83d4a}\label{class_sensor_block_a858a87b528e1fd2ce09368446ac83d4a}} 
+\index{Sensor\+Block@{Sensor\+Block}!Sensor\+Block@{Sensor\+Block}}
+\index{Sensor\+Block@{Sensor\+Block}!Sensor\+Block@{Sensor\+Block}}
+\subsubsection{\texorpdfstring{Sensor\+Block()}{SensorBlock()}}
+{\footnotesize\ttfamily Sensor\+Block\+::\+Sensor\+Block (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Sensors,  }\item[{int}]{block\+Address }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sensor_block_a139f31b82ef60a0dc64cfdd2208c565f}\label{class_sensor_block_a139f31b82ef60a0dc64cfdd2208c565f}} 
+\index{Sensor\+Block@{Sensor\+Block}!get\+Packet@{get\+Packet}}
+\index{get\+Packet@{get\+Packet}!Sensor\+Block@{Sensor\+Block}}
+\subsubsection{\texorpdfstring{get\+Packet()}{getPacket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sensor_packet}{Sensor\+Packet}} Sensor\+Block\+::get\+Packet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_sensor_block_a8210999358ea8db5961b9c9c56128a8b}\label{class_sensor_block_a8210999358ea8db5961b9c9c56128a8b}} 
+\index{Sensor\+Block@{Sensor\+Block}!update@{update}}
+\index{update@{update}!Sensor\+Block@{Sensor\+Block}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Sensor\+Block\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_sensor_block_aba53bd5cc52d416a9fed2b8ca57647ba}\label{class_sensor_block_aba53bd5cc52d416a9fed2b8ca57647ba}} 
+\index{Sensor\+Block@{Sensor\+Block}!block\+Address@{block\+Address}}
+\index{block\+Address@{block\+Address}!Sensor\+Block@{Sensor\+Block}}
+\subsubsection{\texorpdfstring{block\+Address}{blockAddress}}
+{\footnotesize\ttfamily int Sensor\+Block\+::block\+Address\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_block_ae7627da0b0154d28327756ffa0883281}\label{class_sensor_block_ae7627da0b0154d28327756ffa0883281}} 
+\index{Sensor\+Block@{Sensor\+Block}!i2C@{i2C}}
+\index{i2C@{i2C}!Sensor\+Block@{Sensor\+Block}}
+\subsubsection{\texorpdfstring{i2C}{i2C}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_i2_c_pi}{I2\+C\+Pi}} Sensor\+Block\+::i2C\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_block_a323076089f7227ca2d5a50be10538f1b}\label{class_sensor_block_a323076089f7227ca2d5a50be10538f1b}} 
+\index{Sensor\+Block@{Sensor\+Block}!number\+Of\+Sensors@{number\+Of\+Sensors}}
+\index{number\+Of\+Sensors@{number\+Of\+Sensors}!Sensor\+Block@{Sensor\+Block}}
+\subsubsection{\texorpdfstring{number\+Of\+Sensors}{numberOfSensors}}
+{\footnotesize\ttfamily int Sensor\+Block\+::number\+Of\+Sensors\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_sensor_block_a7400a743ef512ca008cd1cebc9a3856e}\label{class_sensor_block_a7400a743ef512ca008cd1cebc9a3856e}} 
+\index{Sensor\+Block@{Sensor\+Block}!packet@{packet}}
+\index{packet@{packet}!Sensor\+Block@{Sensor\+Block}}
+\subsubsection{\texorpdfstring{packet}{packet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sensor_packet}{Sensor\+Packet}}$\ast$ Sensor\+Block\+::packet\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Hardware/\mbox{\hyperlink{_sensor_block_8h}{Sensor\+Block.\+h}}\item 
+Hardware/\mbox{\hyperlink{_sensor_block_8cpp}{Sensor\+Block.\+cpp}}\end{DoxyCompactItemize}

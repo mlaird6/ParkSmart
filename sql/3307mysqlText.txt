@@ -1,0 +1,75 @@
+------
+Setup:
+------
+
+CREATE TABLE user (userID INT, uname CHAR(15), fname CHAR(15), name CHAR(15), licenseNum CHAR(6), vehicleType CHAR(3), pregnant TINYINT(1), disability TINYINT(1), PRIMARY KEY(userID));
+
+CREATE TABLE parkingSession (sessionID INT, startTime DATETIME, endTime DATETIME, userID INT, spaceID INT, PRIMARY KEY (sessionID), FOREIGN KEY (userID) REFERENCES user(userID), FOREIGN KEY (spaceID) REFERENCES parkingSpace(spaceID));
+
+CREATE TABLE parkingLot (lotID INT, userID INT, address CHAR(30), rate FLOAT, openTime TIME, closeTime TIME, PRIMARY KEY (lotID), FOREIGN KEY (userID) REFERENCES user(userID) ON DELETE CASCADE);
+
+CREATE TABLE parkingSpace (spaceID INT, lotID INT, occupancy TINYINT(1), type char(3), reservationID INT, PRIMARY KEY (spaceID), FOREIGN KEY (lotID) REFERENCES parkingLot(lotID) ON DELETE CASCADE, FOREIGN KEY (reservationID) REFERENCES reservation(reservationID) ON DELETE CASCADE);
+
+CREATE TABLE reservation (reservationID INT, startTime DATETIME, endTime DATETIME, PRIMARY KEY (reservationID));
+
+
+-----------
+adding data:
+-----------
+create database ParkSmart;
+use ParkSmart;
+create table user (id MEDIUMINT NOT NULL AUTO_INCREMENT, username CHAR(30) NOT NULL, password CHAR(30), fname CHAR(30), lname CHAR(30), vehicle_type CHAR(15), license_num CHAR(20), pregnant TINYINT, disability TINYINT, driver TINYINT, lot_owner TINYINT, PRIMARY KEY (id));
+create table parkingLot (id MEDIUMINT NOT NULL AUTO_INCREMENT, ownerid CHAR(30) NOT NULL REFERENCES user(id), address CHAR(30), rate CHAR(30), open_time CHAR(30), close_time CHAR(15), PRIMARY KEY (id));
+create table parkingSpace (id MEDIUMINT NOT NULL AUTO_INCREMENT, lotid MEDIUMINT NOT NULL REFERENCES parkingLot(id), type CHAR(10), occupied TINYINT, reserved TINYINT, inner_id MEDIUMINT, PRIMARY KEY (id));
+
+
+
+INSERT INTO user (id, username, password, fname, lname , vehicle_type, license_num, pregnant, disability, driver, lot_owner) VALUES (001, 'mlaird6', 'noodle', 'Melina', 'Laird', 'CAR', 'PLAT35', 0, 0, 1, 1);
+INSERT INTO parkingLot (id, ownerid, address, rate, open_time, close_time) VALUES (1, '001', '100 parking street', '9', 10:00', '23:00');
+INSERT INTO parkingLot (id, ownerid, address, rate, open_time, close_time) VALUES (1, '001', '100 parking address', '9', '10:00', '23:00');
+
+
+
+INSERT INTO parkingLot (lotID, userID, address, rate, openTime, closeTime) VALUES (001, 001, '100 parking street', '7', '07:00:00', '21:00:00');
+
+INSERT INTO parkingSpace (spaceID, lotID, occupancy, type) VALUES (001, 001, 0, 'car');
+INSERT INTO parkingSpace (spaceID, lotID, occupancy, type) VALUES (002, 001, 0, 'dis');
+INSERT INTO parkingSpace (spaceID, lotID, occupancy, type) VALUES (003, 001, 0, 'prg');
+INSERT INTO parkingSpace (spaceID, lotID, occupancy, type) VALUES (004, 001, 0, 'car');
+INSERT INTO parkingSpace (spaceID, lotID, occupancy, type) VALUES (005, 001, 0, 'car');
+INSERT INTO parkingSpace (spaceID, lotID, occupancy, type) VALUES (006, 001, 0, 'car');
+INSERT INTO parkingSpace (spaceID, lotID, occupancy, type) VALUES (007, 001, 0, 'car');
+
+INSERT INTO reservation (reservationID, startTime, endTime) VALUES (001, '2018-11-10 10:30:00', '2018-11-10 12:30:00');
+
+INSERT INTO parkingSession (sessionID, startTime, endTime, userID, spaceID)VALUES (001, '2018-11-7 13:30:00', '2018-11-7 15:30:00', 001, 006);
+
+--------
+editing:
+--------
+
+ALTER TABLE user ADD COLUMN lname CHAR(15);
+ALTER TABLE parkingSpace MODIFY COLUMN type char(3) AFTER lotID;
+
+
+--------
+queries:
+--------
+
+//Order by space type
+SELECT distinct parkingLot.lotID, parkingLot.rate, parkingSpace.spaceID, parkingSpace.type FROM parkingLot, parkingSpace WHERE parkingLot.lotID = parkingSpace.lotID GROUP BY parkingSpace.type, parkingLot.lotID, parkingLot.rate, parkingSpace.spaceID;
+
+
+-----------------
+sharing is caring:
+-----------------
+
+GRANT ALL ON ParkSmart.* TO kzambran@'172.30.75.189' IDENTIFIED BY 'kittyKat';
+
+mysql -u kzambran -p -h 192.168.56.1
+
+
+
+g++ -o tester -I/usr/local/include -I/usr/local/include/cppconn sqltest.cppp -lmysqlcppconn
+
+./tester

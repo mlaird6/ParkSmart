@@ -1,0 +1,77 @@
+Park\+Smart provides detailed parking lot availability data to users. Our application will classify each parking spot in the lot as either taken or available and report the data to users using a clean graphical interface. Hardware elements include distance sensors which are necessary to detect cars and return data. Increased functionality may include a mobile application, off-\/site data storage, and increased data about specific parking spots (proximity to buildings, shade, timing, etc.).
+
+\subsection*{Getting Started}
+
+To run this project you must be using the Raspbian Operating System, whether as a virtual machine or on the device. Git is required for this project. 
+\begin{DoxyCode}
+#clone this project
+git clone ssh://git@repo.csd.uwo.ca:7999/compsci3307\_f2018/group30.git
+
+#download MySQL
+sudo apt-get install mysql-server
+
+#install mysql c++ connector
+sudo apt-get install libmysqlcppconn-dev
+
+#setup the database in mysql
+create database ParkSmart;
+create user 'username'@'%' identified by 'password';
+grant all privileges on ParkSmart to 'username'@'%';
+
+#run the script in data folder to instantiate a version of the mysql database
+cd data
+mysql -u username -p password ParkSmart < instantiate.sql
+
+#build the project
+cd build
+make
+
+#start the server
+./server\_run
+
+#start the sensor sub system
+./sensor\_run
+
+#open a telnet client to connect to the server with the ip address and port number in WebServer.hpp
+\end{DoxyCode}
+
+
+\subsection*{Contributing}
+
+To contribute to this project create a new branch for your feature 
+\begin{DoxyCode}
+git branch <branch\_name>
+git checkout <branch\_name>
+\end{DoxyCode}
+ Code away! When ready to push commit your changes and push to your branch 
+\begin{DoxyCode}
+git push origin <branch\_name>
+\end{DoxyCode}
+ Then create a pull request in the Bit\+Bucket repository.
+
+\subsection*{Project Structure}
+
+
+\begin{DoxyItemize}
+\item {\ttfamily bin} -\/ holds executables
+\item {\ttfamily build} -\/ holds makefile and test scripts
+\item {\ttfamily data} -\/ holds additional data for startup
+\item {\ttfamily include} -\/ holds header files
+\item {\ttfamily src} -\/ holds C++ files
+\begin{DoxyItemize}
+\item {\ttfamily models} -\/ models used in system
+\item {\ttfamily actions} -\/ implementations of actions
+\item {\ttfamily servers} -\/ implementations of seperate servers (Web\+Server, \mbox{\hyperlink{class_authentication_server}{Authentication\+Server}}, Database\+Server)
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection*{Authors}
+
+
+\begin{DoxyItemize}
+\item {\bfseries Jake Mc\+Laughlin} -\/ (\href{https://github.com/jakemclaughlin6}{\tt https\+://github.\+com/jakemclaughlin6})
+\item {\bfseries Melina Laird} -\/ (\href{https://github.com/mlaird6}{\tt https\+://github.\+com/mlaird6})
+\item {\bfseries Nicholas Tocco} -\/ (\href{https://github.com/toccon}{\tt https\+://github.\+com/toccon})
+\item {\bfseries Mike Levis} -\/ (\href{https://github.com/opop10}{\tt https\+://github.\+com/opop10})
+\item {\bfseries Katherine Zambrano} -\/ (\href{https://repo.csd.uwo.ca/users/kzambran}{\tt https\+://repo.\+csd.\+uwo.\+ca/users/kzambran}) 
+\end{DoxyItemize}
